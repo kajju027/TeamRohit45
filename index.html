@@ -381,7 +381,13 @@ function toast(msg, type, dur){
 function setMsg(m){ $loadMsg && ($loadMsg.textContent = m); }
 function hideOverlay(){ $overlay && ($overlay.style.display = "none"); }
 function getChId(){ return new URLSearchParams(location.search).get("id") || ""; }
-function rawCookie(c){ return c && c.indexOf("__hdnea=") === 0 ? c.slice(10) : (c || ""); }
+function rawCookie(c){
+  if(!c) return "";
+  if(c.indexOf("__hdnea__=") === 0) return c.slice(10);
+  if(c.indexOf("__hdnea=")   === 0) return c.slice(9);
+  return c;
+}
+function cookieHeader(c){ return c || ""; }
 
 async function loadData(){
   var url = API + (API.indexOf("?") !== -1 ? "&" : "?") + "_t=" + Date.now();
@@ -577,10 +583,12 @@ async function startPlayer(ch){
   }
   var T = shaka.net.NetworkingEngine.RequestType;
   player.getNetworkingEngine().registerRequestFilter(function(type, request){
-    request.headers["Referer"]    = "https://www.jiotv.com/";
-    request.headers["User-Agent"] = "Mozilla/5.0 (Linux; Android 11; SM-G991B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36";
+    request.headers["Referer"]         = "https://www.jiotv.com/";
+    request.headers["User-Agent"]      = "Mozilla/5.0 (Linux; Android 11; SM-G991B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36";
+    request.headers["x-jio-expiry"]    = "";
     if(cookie) request.headers["Cookie"] = cookie;
-    if(type === T.MANIFEST || type === T.SEGMENT) request.uris = request.uris.map(withToken);
+    if(type === T.MANIFEST || type === T.SEGMENT || type === T.LICENSE)
+      request.uris = request.uris.map(withToken);
   });
 
   function buildCfg(){

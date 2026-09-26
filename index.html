@@ -1,4 +1,488 @@
-<script>
-<!-- code by https://www.html-code-generator.com -->
-document.write(decodeURIComponent('%3C!DOCTYPE%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%3Cmeta%20charset%3D%22utf-8%22%3E%0A%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2Cinitial-scale%3D1%2Cmaximum-scale%3D1%2Cuser-scalable%3Dno%2Cviewport-fit%3Dcover%22%3E%0A%3Cmeta%20name%3D%22referrer%22%20content%3D%22no-referrer%22%3E%0A%3Cmeta%20name%3D%22mobile-web-app-capable%22%20content%3D%22yes%22%3E%0A%3Cmeta%20name%3D%22apple-mobile-web-app-capable%22%20content%3D%22yes%22%3E%0A%3Cmeta%20name%3D%22apple-mobile-web-app-status-bar-style%22%20content%3D%22black-translucent%22%3E%0A%3Ctitle%3ETeamRohit%2045%3C%2Ftitle%3E%0A%3Clink%20rel%3D%22preconnect%22%20href%3D%22https%3A%2F%2Fsonujson-v3.pages.dev%2F%22%3E%0A%3Clink%20rel%3D%22dns-prefetch%22%20href%3D%22https%3A%2F%2Fsonujson-v3.pages.dev%2F%22%3E%0A%3Clink%20rel%3D%22preconnect%22%20href%3D%22https%3A%2F%2Fwww.jiotv.com%2F%22%3E%0A%3Clink%20rel%3D%22dns-prefetch%22%20href%3D%22https%3A%2F%2Fwww.jiotv.com%2F%22%3E%0A%3Clink%20rel%3D%22preconnect%22%20href%3D%22https%3A%2F%2Ffonts.googleapis.com%22%3E%0A%3Clink%20rel%3D%22preconnect%22%20href%3D%22https%3A%2F%2Ffonts.gstatic.com%22%20crossorigin%3E%0A%3Clink%20href%3D%22https%3A%2F%2Ffonts.googleapis.com%2Fcss2%3Ffamily%3DBarlow%2BCondensed%3Awght%40700%3B800%3B900%26family%3DInter%3Awght%40400%3B500%3B600%26display%3Dswap%22%20rel%3D%22stylesheet%22%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2Fshaka-player%404.16.2%2Fdist%2Fcontrols.css%22%3E%0A%3Cstyle%3E%0A*%2C*%3A%3Abefore%2C*%3A%3Aafter%7Bmargin%3A0%3Bpadding%3A0%3Bbox-sizing%3Aborder-box%7D%0Ahtml%2Cbody%7B%0A%20%20width%3A100%25%3Bheight%3A100%25%3Bbackground%3A%23080b10%3Boverflow%3Ahidden%3B%0A%20%20font-family%3A\'Inter\'%2Csans-serif%3B%0A%20%20-webkit-user-select%3Anone%3Buser-select%3Anone%3B-webkit-touch-callout%3Anone%0A%7D%0A%0A%3Aroot%7B%0A%20%20--gold%3A%23f5b800%3B%0A%20%20--gold-dim%3A%23c49300%3B%0A%20%20--gold-glow%3Argba(245%2C184%2C0%2C.15)%3B%0A%20%20--red%3A%23e8003d%3B%0A%20%20--bg%3A%23080b10%3B%0A%20%20--surface%3A%230e1218%3B%0A%20%20--surface2%3A%23131820%3B%0A%20%20--border%3Argba(255%2C255%2C255%2C.05)%3B%0A%20%20--border-g%3Argba(245%2C184%2C0%2C.2)%3B%0A%20%20--text%3A%23c8d0dc%3B%0A%20%20--muted%3A%233d4a5c%3B%0A%7D%0A%0A%2F*%20%E2%94%80%E2%94%80%20LOADING%20OVERLAY%20%E2%94%80%E2%94%80%20*%2F%0A%23overlay%7B%0A%20%20position%3Afixed%3Binset%3A0%3Bbackground%3Avar(--bg)%3Bz-index%3A9999%3B%0A%20%20display%3Aflex%3Balign-items%3Acenter%3Bjustify-content%3Acenter%3B%0A%20%20flex-direction%3Acolumn%3Bgap%3A20px%0A%7D%0A.ov-logo%7Bdisplay%3Aflex%3Bflex-direction%3Acolumn%3Balign-items%3Acenter%3Bgap%3A6px%7D%0A.ov-icon%7B%0A%20%20width%3A56px%3Bheight%3A56px%3Bborder-radius%3A14px%3B%0A%20%20background%3Alinear-gradient(135deg%2Cvar(--gold)%200%25%2Cvar(--gold-dim)%20100%25)%3B%0A%20%20display%3Aflex%3Balign-items%3Acenter%3Bjustify-content%3Acenter%3Bmargin-bottom%3A4px%3B%0A%20%20box-shadow%3A0%200%2020px%20rgba(245%2C184%2C0%2C.35)%0A%7D%0A.ov-icon%20svg%7Bwidth%3A30px%3Bheight%3A30px%3Bcolor%3A%23060810%7D%0A.ov-name%7B%0A%20%20font-family%3A\'Barlow%20Condensed\'%2Csans-serif%3B%0A%20%20font-size%3A28px%3Bfont-weight%3A900%3Bletter-spacing%3A2px%3Bcolor%3A%23fff%0A%7D%0A.ov-name%20em%7Bcolor%3Avar(--gold)%3Bfont-style%3Anormal%7D%0A.ov-tagline%7Bfont-size%3A9px%3Bfont-weight%3A600%3Bletter-spacing%3A3px%3Bcolor%3Avar(--muted)%3Btext-transform%3Auppercase%7D%0A.ov-spinner%20svg%7Banimation%3Aspin%201s%20linear%20infinite%7D%0A%40keyframes%20spin%7Bto%7Btransform%3Arotate(360deg)%7D%7D%0A%23loadMsg%7Bcolor%3Avar(--muted)%3Bfont-size%3A11.5px%3Bletter-spacing%3A.5px%3Btext-align%3Acenter%3Bpadding%3A0%2024px%7D%0A%0A%2F*%20%E2%94%80%E2%94%80%20CHANNEL%20LIST%20%E2%94%80%E2%94%80%20*%2F%0A%23channel-list%7B%0A%20%20position%3Afixed%3Binset%3A0%3Bbackground%3Avar(--bg)%3Bz-index%3A9998%3B%0A%20%20display%3Anone%3Bflex-direction%3Acolumn%3Boverflow-y%3Aauto%3B%0A%20%20padding%3A0%200%20max(20px%2Cenv(safe-area-inset-bottom))%0A%7D%0A%0A%2F*%20sticky%20header%20*%2F%0A.site-header%7B%0A%20%20position%3Asticky%3Btop%3A0%3Bz-index%3A5%3B%0A%20%20background%3Alinear-gradient(180deg%2Crgba(8%2C11%2C16%2C1)%2065%25%2Crgba(8%2C11%2C16%2C0))%3B%0A%20%20padding%3Amax(18px%2Cenv(safe-area-inset-top))%2016px%2016px%3B%0A%20%20display%3Aflex%3Balign-items%3Acenter%3Bjustify-content%3Aspace-between%3Bgap%3A12px%0A%7D%0A.hdr-brand%7Bdisplay%3Aflex%3Balign-items%3Acenter%3Bgap%3A9px%7D%0A.hdr-icon%7B%0A%20%20width%3A34px%3Bheight%3A34px%3Bborder-radius%3A9px%3Bflex-shrink%3A0%3B%0A%20%20background%3Alinear-gradient(135deg%2Cvar(--gold)%200%25%2Cvar(--gold-dim)%20100%25)%3B%0A%20%20display%3Aflex%3Balign-items%3Acenter%3Bjustify-content%3Acenter%3B%0A%20%20box-shadow%3A0%200%2012px%20rgba(245%2C184%2C0%2C.28)%0A%7D%0A.hdr-icon%20svg%7Bwidth%3A18px%3Bheight%3A18px%3Bcolor%3A%23060810%7D%0A.hdr-text%7B%7D%0A.hdr-name%7B%0A%20%20font-family%3A\'Barlow%20Condensed\'%2Csans-serif%3B%0A%20%20font-size%3A18px%3Bfont-weight%3A900%3Bletter-spacing%3A1px%3Bcolor%3A%23fff%3Bline-height%3A1%0A%7D%0A.hdr-name%20em%7Bcolor%3Avar(--gold)%3Bfont-style%3Anormal%7D%0A.hdr-sub%7Bfont-size%3A8.5px%3Bfont-weight%3A600%3Bletter-spacing%3A2.5px%3Bcolor%3Avar(--muted)%3Btext-transform%3Auppercase%7D%0A.tg-hdr-btn%7B%0A%20%20display%3Aflex%3Balign-items%3Acenter%3Bgap%3A5px%3B%0A%20%20padding%3A7px%2012px%207px%2010px%3Bborder-radius%3A20px%3B%0A%20%20background%3Argba(245%2C184%2C0%2C.08)%3Bborder%3A1px%20solid%20var(--border-g)%3B%0A%20%20color%3Avar(--gold)%3Bfont-size%3A11px%3Bfont-weight%3A700%3Bletter-spacing%3A.4px%3B%0A%20%20text-decoration%3Anone%3Btransition%3Abackground%20.18s%2Ctransform%20.1s%3B%0A%20%20-webkit-tap-highlight-color%3Atransparent%3Bflex-shrink%3A0%0A%7D%0A.tg-hdr-btn%3Ahover%7Bbackground%3Argba(245%2C184%2C0%2C.15)%7D%0A.tg-hdr-btn%3Aactive%7Btransform%3Ascale(.93)%7D%0A.tg-hdr-btn%20svg%7Bwidth%3A13px%3Bheight%3A13px%3Bflex-shrink%3A0%7D%0A%0A%2F*%20live%20row%20*%2F%0A.live-row%7B%0A%20%20display%3Aflex%3Balign-items%3Acenter%3Bgap%3A8px%3B%0A%20%20padding%3A0%2016px%2014px%0A%7D%0A.live-pill%7B%0A%20%20display%3Ainline-flex%3Balign-items%3Acenter%3Bgap%3A5px%3B%0A%20%20padding%3A3px%209px%3Bborder-radius%3A4px%3B%0A%20%20background%3Argba(232%2C0%2C61%2C.1)%3Bborder%3A1px%20solid%20rgba(232%2C0%2C61%2C.2)%0A%7D%0A.live-dot%7B%0A%20%20width%3A5px%3Bheight%3A5px%3Bborder-radius%3A50%25%3Bbackground%3Avar(--red)%3B%0A%20%20animation%3Ared-pulse%201.5s%20ease-in-out%20infinite%3Bflex-shrink%3A0%0A%7D%0A%40keyframes%20red-pulse%7B0%25%2C100%25%7Bopacity%3A1%7D50%25%7Bopacity%3A.25%7D%7D%0A.live-pill%20span%7Bfont-size%3A9px%3Bfont-weight%3A800%3Bletter-spacing%3A1.5px%3Bcolor%3Avar(--red)%7D%0A.live-row%20.row-label%7Bfont-size%3A11.5px%3Bcolor%3Avar(--muted)%7D%0A%0A%2F*%20grid%20*%2F%0A.grid-wrap%7Bpadding%3A0%2014px%7D%0A%23ch-grid%7B%0A%20%20display%3Agrid%3B%0A%20%20grid-template-columns%3Arepeat(auto-fill%2Cminmax(145px%2C1fr))%3B%0A%20%20gap%3A10px%0A%7D%0A.ch-card%7B%0A%20%20background%3Avar(--surface)%3Bborder%3A1px%20solid%20var(--border)%3B%0A%20%20border-radius%3A12px%3Bpadding%3A16px%2013px%3Bcursor%3Apointer%3B%0A%20%20text-decoration%3Anone%3B%0A%20%20display%3Aflex%3Balign-items%3Acenter%3Bjustify-content%3Aspace-between%3Bgap%3A8px%3B%0A%20%20transition%3Aborder-color%20.18s%2Cbox-shadow%20.18s%2Ctransform%20.12s%3B%0A%20%20-webkit-tap-highlight-color%3Atransparent%0A%7D%0A.ch-card%3Ahover%7Bborder-color%3Avar(--border-g)%3Bbox-shadow%3A0%200%2016px%20var(--gold-glow)%7D%0A.ch-card%3Aactive%7Btransform%3Ascale(.95)%7D%0A.ch-card%3Afocus-visible%7Boutline%3A2px%20solid%20var(--gold)%3Boutline-offset%3A2px%7D%0A.ch-name%7Bcolor%3A%23d8dfe8%3Bfont-size%3A12.5px%3Bfont-weight%3A500%3Bline-height%3A1.4%3Bflex%3A1%7D%0A.ch-play%7B%0A%20%20width%3A22px%3Bheight%3A22px%3Bborder-radius%3A50%25%3Bflex-shrink%3A0%3B%0A%20%20background%3Argba(245%2C184%2C0%2C.1)%3Bborder%3A1px%20solid%20var(--border-g)%3B%0A%20%20display%3Aflex%3Balign-items%3Acenter%3Bjustify-content%3Acenter%0A%7D%0A.ch-play%20svg%7Bwidth%3A8px%3Bheight%3A8px%3Bcolor%3Avar(--gold)%3Bmargin-left%3A1px%7D%0A%0A%2F*%20footer%20*%2F%0A.page-footer%7B%0A%20%20margin%3A28px%2014px%200%3Bpadding%3A16px%3Bborder-radius%3A12px%3B%0A%20%20background%3Avar(--surface2)%3Bborder%3A1px%20solid%20var(--border-g)%3B%0A%20%20display%3Aflex%3Balign-items%3Acenter%3Bjustify-content%3Aspace-between%3Bgap%3A14px%0A%7D%0A.footer-copy%7Bdisplay%3Aflex%3Bflex-direction%3Acolumn%3Bgap%3A2px%7D%0A.footer-copy%20strong%7Bfont-size%3A12.5px%3Bcolor%3A%23fff%3Bfont-weight%3A700%7D%0A.footer-copy%20span%7Bfont-size%3A10.5px%3Bcolor%3Avar(--muted)%7D%0A.footer-tg-btn%7B%0A%20%20display%3Ainline-flex%3Balign-items%3Acenter%3Bgap%3A6px%3B%0A%20%20padding%3A9px%2014px%3Bborder-radius%3A9px%3Btext-decoration%3Anone%3B%0A%20%20background%3Avar(--gold)%3Bcolor%3A%23060810%3B%0A%20%20font-size%3A12px%3Bfont-weight%3A800%3Bletter-spacing%3A.3px%3B%0A%20%20white-space%3Anowrap%3Bflex-shrink%3A0%3Btransition%3Aopacity%20.15s%0A%7D%0A.footer-tg-btn%3Ahover%7Bopacity%3A.85%7D%0A.footer-tg-btn%20svg%7Bwidth%3A13px%3Bheight%3A13px%7D%0A%0A%2F*%20%E2%94%80%E2%94%80%20PLAYER%20%E2%94%80%E2%94%80%20*%2F%0A%23pc%7B%0A%20%20position%3Afixed%3Binset%3A0%3Bbackground%3A%23000%3Bdisplay%3Anone%3B%0A%20%20align-items%3Acenter%3Bjustify-content%3Acenter%3Btouch-action%3Amanipulation%0A%7D%0Avideo%7Bwidth%3A100%25%3Bheight%3A100%25%3Bobject-fit%3Acontain%3Bbackground%3A%23000%7D%0Avideo.mode-fill%7Bobject-fit%3Afill%7D%0Avideo.mode-cover%7Bobject-fit%3Acover%7D%0A%0A%2F*%20%E2%94%80%E2%94%80%20WATERMARK%20%E2%94%80%E2%94%80%20*%2F%0A%23cc-watermark%7B%0A%20%20position%3Afixed%3Bz-index%3A9996%3B%0A%20%20top%3Amax(13px%2Cenv(safe-area-inset-top))%3B%0A%20%20left%3Amax(13px%2Cenv(safe-area-inset-left))%3B%0A%20%20display%3Aflex%3Balign-items%3Acenter%3Bgap%3A6px%3B%0A%20%20padding%3A5px%2011px%205px%208px%3Bborder-radius%3A999px%3B%0A%20%20background%3Argba(8%2C11%2C16%2C.65)%3Bborder%3A1px%20solid%20var(--border-g)%3B%0A%20%20backdrop-filter%3Ablur(8px)%3B-webkit-backdrop-filter%3Ablur(8px)%3B%0A%20%20pointer-events%3Anone%0A%7D%0A.wm-dot%7B%0A%20%20width%3A6px%3Bheight%3A6px%3Bborder-radius%3A50%25%3Bbackground%3Avar(--gold)%3Bflex-shrink%3A0%3B%0A%20%20box-shadow%3A0%200%200%200%20rgba(245%2C184%2C0%2C.6)%3B%0A%20%20animation%3Awm-pulse%202s%20ease-out%20infinite%0A%7D%0A%40keyframes%20wm-pulse%7B%0A%20%200%25%20%20%7Bbox-shadow%3A0%200%200%200%20%20%20rgba(245%2C184%2C0%2C.55)%7D%0A%20%2070%25%20%7Bbox-shadow%3A0%200%200%207px%20rgba(245%2C184%2C0%2C0)%7D%0A%20%20100%25%7Bbox-shadow%3A0%200%200%200%20%20%20rgba(245%2C184%2C0%2C0)%7D%0A%7D%0A.wm-label%7B%0A%20%20font-family%3A\'Barlow%20Condensed\'%2Csans-serif%3B%0A%20%20font-size%3A12.5px%3Bfont-weight%3A900%3Bletter-spacing%3A1.4px%3Bcolor%3A%23fff%0A%7D%0A.wm-label%20em%7Bcolor%3Avar(--gold)%3Bfont-style%3Anormal%7D%0A%23cc-watermark.faded%20%20%7Bopacity%3A0%3Btransition%3Aopacity%20.4s%7D%0A%23cc-watermark.visible%7Bopacity%3A1%3Btransition%3Aopacity%20.25s%7D%0A%0A%2F*%20%E2%94%80%E2%94%80%20STATUS%20TOAST%20%E2%94%80%E2%94%80%20*%2F%0A%23status%7B%0A%20%20position%3Afixed%3B%0A%20%20top%3Amax(13px%2Cenv(safe-area-inset-top))%3B%0A%20%20right%3Amax(12px%2Cenv(safe-area-inset-right))%3B%0A%20%20transform%3AtranslateY(-8px)%3B%0A%20%20z-index%3A9997%3B%0A%20%20display%3Aflex%3Balign-items%3Acenter%3Bgap%3A7px%3B%0A%20%20padding%3A5px%2014px%205px%2010px%3B%0A%20%20background%3Argba(8%2C11%2C16%2C.94)%3Bborder%3A1px%20solid%20rgba(255%2C255%2C255%2C.06)%3B%0A%20%20font-size%3A11px%3Bfont-weight%3A500%3Bletter-spacing%3A.2px%3B%0A%20%20border-radius%3A24px%3Bpointer-events%3Anone%3Bopacity%3A0%3B%0A%20%20transition%3Aopacity%20.25s%20ease%2Ctransform%20.25s%20ease%3B%0A%20%20backdrop-filter%3Ablur(12px)%3B-webkit-backdrop-filter%3Ablur(12px)%3B%0A%20%20white-space%3Anowrap%3Bmax-width%3Acalc(100vw%20-%2032px)%3Boverflow%3Ahidden%0A%7D%0A%23status.show%7Bopacity%3A1%3Btransform%3AtranslateY(0)%7D%0A.st-dot%7Bwidth%3A6px%3Bheight%3A6px%3Bborder-radius%3A50%25%3Bflex-shrink%3A0%7D%0A%23status.ok%20%20%20%7Bcolor%3A%23b0bac6%7D%20%23status.ok%20%20%20.st-dot%7Bbackground%3A%2360a5fa%7D%0A%23status.live%20%7Bcolor%3A%23c0c8d0%7D%20%23status.live%20.st-dot%7Bbackground%3A%2322d3a0%3Banimation%3Adot-pulse%202s%20ease-in-out%20infinite%7D%0A%23status.warn%20%7Bcolor%3A%23fcd34d%7D%20%23status.warn%20.st-dot%7Bbackground%3A%23fb923c%3Banimation%3Adot-pulse%201s%20ease-in-out%20infinite%7D%0A%23status.err%20%20%7Bcolor%3A%23fca5a5%7D%20%23status.err%20%20.st-dot%7Bbackground%3A%23f87171%7D%0A%40keyframes%20dot-pulse%7B0%25%2C100%25%7Bopacity%3A1%3Btransform%3Ascale(1)%7D50%25%7Bopacity%3A.3%3Btransform%3Ascale(.5)%7D%7D%0A%0A%2F*%20%E2%94%80%E2%94%80%20TELEGRAM%20POPUP%20%E2%94%80%E2%94%80%20*%2F%0A%23tg-modal%7B%0A%20%20position%3Afixed%3Binset%3A0%3Bz-index%3A10000%3Bdisplay%3Anone%3B%0A%20%20align-items%3Acenter%3Bjustify-content%3Acenter%3B%0A%20%20background%3Argba(0%2C0%2C0%2C.72)%3B%0A%20%20backdrop-filter%3Ablur(4px)%3B-webkit-backdrop-filter%3Ablur(4px)%3B%0A%20%20padding%3A20px%0A%7D%0A%23tg-modal.show%7Bdisplay%3Aflex%7D%0A.tg-box%7B%0A%20%20position%3Arelative%3Bwidth%3A100%25%3Bmax-width%3A308px%3B%0A%20%20background%3Avar(--surface)%3Bborder%3A1px%20solid%20var(--border-g)%3B%0A%20%20border-radius%3A18px%3Bpadding%3A30px%2022px%2024px%3Btext-align%3Acenter%3B%0A%20%20box-shadow%3A0%200%2040px%20var(--gold-glow)%2C0%2016px%2048px%20rgba(0%2C0%2C0%2C.65)%0A%7D%0A.tg-close%7B%0A%20%20position%3Aabsolute%3Btop%3A12px%3Bright%3A12px%3B%0A%20%20width%3A28px%3Bheight%3A28px%3Bborder-radius%3A50%25%3Bborder%3Anone%3B%0A%20%20background%3Atransparent%3Bcolor%3Avar(--muted)%3Bfont-size%3A18px%3Bline-height%3A1%3B%0A%20%20cursor%3Apointer%3Bdisplay%3Aflex%3Balign-items%3Acenter%3Bjustify-content%3Acenter%3B%0A%20%20transition%3Abackground%20.18s%2Ccolor%20.18s%0A%7D%0A.tg-close%3Ahover%7Bbackground%3Avar(--surface2)%3Bcolor%3A%23fff%7D%0A.tg-icon%7B%0A%20%20width%3A58px%3Bheight%3A58px%3Bmargin%3A0%20auto%2014px%3Bborder-radius%3A50%25%3B%0A%20%20background%3Argba(245%2C184%2C0%2C.1)%3Bborder%3A1px%20solid%20var(--border-g)%3B%0A%20%20display%3Aflex%3Balign-items%3Acenter%3Bjustify-content%3Acenter%0A%7D%0A.tg-icon%20svg%7Bwidth%3A26px%3Bheight%3A26px%3Bcolor%3Avar(--gold)%7D%0A.tg-box%20h2%7B%0A%20%20font-family%3A\'Barlow%20Condensed\'%2Csans-serif%3B%0A%20%20font-size%3A21px%3Bfont-weight%3A900%3Bletter-spacing%3A.5px%3Bcolor%3A%23fff%3Bmargin-bottom%3A8px%0A%7D%0A.tg-box%20p%7Bcolor%3Avar(--text)%3Bfont-size%3A12.5px%3Bline-height%3A1.6%3Bmargin-bottom%3A22px%3Bopacity%3A.8%7D%0A.tg-join-btn%7B%0A%20%20display%3Ainline-flex%3Balign-items%3Acenter%3Bjustify-content%3Acenter%3Bgap%3A7px%3B%0A%20%20width%3A100%25%3Bpadding%3A12px%2016px%3Bborder-radius%3A10px%3Btext-decoration%3Anone%3B%0A%20%20background%3Avar(--gold)%3Bcolor%3A%23060810%3B%0A%20%20font-size%3A13px%3Bfont-weight%3A800%3Bletter-spacing%3A.3px%3B%0A%20%20transition%3Aopacity%20.15s%0A%7D%0A.tg-join-btn%3Ahover%7Bopacity%3A.86%7D%0A.tg-join-btn%20svg%7Bwidth%3A15px%3Bheight%3A15px%7D%0A.tg-skip%7B%0A%20%20display%3Ablock%3Bmargin-top%3A12px%3Bfont-size%3A11px%3Bcolor%3Avar(--muted)%3B%0A%20%20cursor%3Apointer%3Bbackground%3Anone%3Bborder%3Anone%3Bwidth%3A100%25%3Btext-align%3Acenter%3B%0A%20%20text-decoration%3Aunderline%3Btext-underline-offset%3A3px%0A%7D%0A%0A%2F*%20%E2%94%80%E2%94%80%20CUSTOM%20SHAKA%20BUTTONS%20%E2%94%80%E2%94%80%20*%2F%0A.sp-btn%7B%0A%20%20background%3Atransparent!important%3Bborder%3Anone!important%3B%0A%20%20cursor%3Apointer!important%3Bpadding%3A0%208px!important%3B%0A%20%20opacity%3A.75%3Bdisplay%3Aflex%3Balign-items%3Acenter%3Bjustify-content%3Acenter%3B%0A%20%20height%3A100%25%3Bmin-width%3A36px%3B%0A%20%20transition%3Aopacity%20.15s%2Ccolor%20.15s%3B%0A%20%20color%3A%23fff!important%3B-webkit-tap-highlight-color%3Atransparent%0A%7D%0A.sp-btn%3Ahover%7Bopacity%3A1%7D%0A.sp-btn%3Aactive%7Bopacity%3A1%3Btransform%3Ascale(.9)%7D%0A.sp-btn%3Afocus-visible%7Boutline%3A2px%20solid%20var(--gold)%3Boutline-offset%3A2px%3Bborder-radius%3A6px%7D%0A.sp-btn.active%7Bopacity%3A1%3Bcolor%3Avar(--gold)!important%7D%0A.sp-fit-btn%7Bpadding%3A0%207px!important%3Bmin-width%3Aauto!important%7D%0A.fit-pill%7B%0A%20%20font-size%3A10px%3Bfont-weight%3A700%3Bletter-spacing%3A.4px%3B%0A%20%20padding%3A3px%207px%3Bborder-radius%3A4px%3Bline-height%3A1%3B%0A%20%20border%3A1.5px%20solid%20rgba(255%2C255%2C255%2C.25)%3B%0A%20%20color%3Argba(255%2C255%2C255%2C.75)%3B%0A%20%20pointer-events%3Anone%3Bwhite-space%3Anowrap%3B%0A%20%20transition%3Aborder-color%20.2s%2Ccolor%20.2s%0A%7D%0A.sp-fit-btn%3Ahover%20%20%20%20%20%20%20.fit-pill%7Bborder-color%3Argba(255%2C255%2C255%2C.5)%3Bcolor%3A%23fff%7D%0A.sp-fit-btn.mode-fill%20%20%20.fit-pill%7Bborder-color%3Avar(--gold)%3Bcolor%3Avar(--gold)%7D%0A.sp-fit-btn.mode-cover%20%20.fit-pill%7Bborder-color%3A%23a78bfa%3Bcolor%3A%23a78bfa%7D%0A%0A.shaka-controls-container%20button%7Bcolor%3A%23fff!important%7D%0A.shaka-video-container%7Bbackground-color%3A%23000!important%7D%0A%0A%40media(max-width%3A400px)%7B%0A%20%20.fit-pill%7Bfont-size%3A9px%3Bpadding%3A2px%205px%7D%0A%20%20.sp-btn%7Bpadding%3A0%205px!important%7D%0A%20%20.page-footer%7Bflex-direction%3Acolumn%3Btext-align%3Acenter%7D%0A%7D%0A%3C%2Fstyle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%0A%3C!--%20LOADING%20--%3E%0A%3Cdiv%20id%3D%22overlay%22%3E%0A%20%20%3Cdiv%20class%3D%22ov-logo%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22ov-icon%22%3E%0A%20%20%20%20%20%20%3Csvg%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22currentColor%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M12%202C6.48%202%202%206.48%202%2012s4.48%2010%2010%2010%2010-4.48%2010-10S17.52%202%2012%202zm-1%2014.5v-9l6%204.5-6%204.5z%22%2F%3E%0A%20%20%20%20%20%20%3C%2Fsvg%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22ov-name%22%3ETEAM%3Cem%3EROHIT%3C%2Fem%3E%2045%3C%2Fdiv%3E%0A%20%20%20%20%3Cdiv%20class%3D%22ov-tagline%22%3ELive%20Cricket%20Streaming%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%20%20%3Cdiv%20class%3D%22ov-spinner%22%3E%0A%20%20%20%20%3Csvg%20width%3D%2234%22%20height%3D%2234%22%20viewBox%3D%220%200%2040%2040%22%20fill%3D%22none%22%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%2220%22%20cy%3D%2220%22%20r%3D%2216%22%20stroke%3D%22%23151d28%22%20stroke-width%3D%224%22%2F%3E%0A%20%20%20%20%20%20%3Cpath%20d%3D%22M20%204a16%2016%200%200%201%2016%2016%22%20stroke%3D%22%23f5b800%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22%2F%3E%0A%20%20%20%20%3C%2Fsvg%3E%0A%20%20%3C%2Fdiv%3E%0A%20%20%3Cp%20id%3D%22loadMsg%22%3ELoading%E2%80%A6%3C%2Fp%3E%0A%3C%2Fdiv%3E%0A%0A%3C!--%20STATUS%20--%3E%0A%3Cdiv%20id%3D%22status%22%3E%3C%2Fdiv%3E%0A%0A%3C!--%20WATERMARK%20(player%20page)%20--%3E%0A%3Cdiv%20id%3D%22cc-watermark%22%20class%3D%22visible%22%20style%3D%22display%3Anone%22%3E%0A%20%20%3Cspan%20class%3D%22wm-dot%22%3E%3C%2Fspan%3E%0A%20%20%3Cspan%20class%3D%22wm-label%22%3ETEAM%3Cem%3EROHIT%3C%2Fem%3E%2045%3C%2Fspan%3E%0A%3C%2Fdiv%3E%0A%0A%3C!--%20CHANNEL%20LIST%20--%3E%0A%3Cdiv%20id%3D%22channel-list%22%3E%0A%20%20%3Cdiv%20class%3D%22site-header%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22hdr-brand%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22hdr-icon%22%3E%0A%20%20%20%20%20%20%20%20%3Csvg%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22currentColor%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M12%202C6.48%202%202%206.48%202%2012s4.48%2010%2010%2010%2010-4.48%2010-10S17.52%202%2012%202zm-1%2014.5v-9l6%204.5-6%204.5z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2Fsvg%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22hdr-text%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22hdr-name%22%3ETEAM%3Cem%3EROHIT%3C%2Fem%3E%2045%3C%2Fdiv%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22hdr-sub%22%3ELive%20Cricket%3C%2Fdiv%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Ca%20class%3D%22tg-hdr-btn%22%20href%3D%22https%3A%2F%2Ft.me%2F%2BlkbpBqFd0FljNzJl%22%20target%3D%22_blank%22%20rel%3D%22noopener%22%3E%0A%20%20%20%20%20%20%3Csvg%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22currentColor%22%3E%3Cpath%20d%3D%22M21.05%203.16%202.53%2010.33c-1.24.5-1.23%201.19-.23%201.5l4.76%201.48%201.84%205.6c.22.6.36.85.7.85.27%200%20.39-.12.53-.27l1.9-1.85%204.68%203.45c.86.48%201.48.23%201.7-.8l3.06-14.3c.3-1.28-.48-1.85-1.42-1.83zM8.4%2014.02l9.2-8.24c.4-.36-.09-.53-.6-.2l-11.3%207.1-4.66-1.46c-1.01-.32-1.03-1.01.22-1.5L20.35%204.5c.85-.32%201.6.2%201.32%201.5%22%2F%3E%3C%2Fsvg%3E%0A%20%20%20%20%20%20Join%0A%20%20%20%20%3C%2Fa%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20class%3D%22live-row%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22live-pill%22%3E%3Cspan%20class%3D%22live-dot%22%3E%3C%2Fspan%3E%3Cspan%3ELIVE%3C%2Fspan%3E%3C%2Fdiv%3E%0A%20%20%20%20%3Cspan%20class%3D%22row-label%22%3ESelect%20a%20channel%20to%20watch%3C%2Fspan%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20class%3D%22grid-wrap%22%3E%0A%20%20%20%20%3Cdiv%20id%3D%22ch-grid%22%3E%3C%2Fdiv%3E%0A%20%20%3C%2Fdiv%3E%0A%0A%20%20%3Cdiv%20class%3D%22page-footer%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22footer-copy%22%3E%0A%20%20%20%20%20%20%3Cstrong%3EGet%20Live%20Match%20Links%3C%2Fstrong%3E%0A%20%20%20%20%20%20%3Cspan%3EStream%20updates%20%26%20alerts%20on%20Telegram%3C%2Fspan%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Ca%20class%3D%22footer-tg-btn%22%20href%3D%22https%3A%2F%2Ft.me%2F%2BlkbpBqFd0FljNzJl%22%20target%3D%22_blank%22%20rel%3D%22noopener%22%3E%0A%20%20%20%20%20%20%3Csvg%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22currentColor%22%3E%3Cpath%20d%3D%22M21.05%203.16%202.53%2010.33c-1.24.5-1.23%201.19-.23%201.5l4.76%201.48%201.84%205.6c.22.6.36.85.7.85.27%200%20.39-.12.53-.27l1.9-1.85%204.68%203.45c.86.48%201.48.23%201.7-.8l3.06-14.3c.3-1.28-.48-1.85-1.42-1.83zM8.4%2014.02l9.2-8.24c.4-.36-.09-.53-.6-.2l-11.3%207.1-4.66-1.46c-1.01-.32-1.03-1.01.22-1.5L20.35%204.5c.85-.32%201.6.2%201.32%201.5%22%2F%3E%3C%2Fsvg%3E%0A%20%20%20%20%20%20Join%20Telegram%0A%20%20%20%20%3C%2Fa%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3C!--%20TELEGRAM%20POPUP%20--%3E%0A%3Cdiv%20id%3D%22tg-modal%22%3E%0A%20%20%3Cdiv%20class%3D%22tg-box%22%3E%0A%20%20%20%20%3Cbutton%20class%3D%22tg-close%22%20id%3D%22tg-close%22%20aria-label%3D%22Close%22%3E%26times%3B%3C%2Fbutton%3E%0A%20%20%20%20%3Cdiv%20class%3D%22tg-icon%22%3E%0A%20%20%20%20%20%20%3Csvg%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22currentColor%22%3E%3Cpath%20d%3D%22M21.05%203.16%202.53%2010.33c-1.24.5-1.23%201.19-.23%201.5l4.76%201.48%201.84%205.6c.22.6.36.85.7.85.27%200%20.39-.12.53-.27l1.9-1.85%204.68%203.45c.86.48%201.48.23%201.7-.8l3.06-14.3c.3-1.28-.48-1.85-1.42-1.83zM8.4%2014.02l9.2-8.24c.4-.36-.09-.53-.6-.2l-11.3%207.1-4.66-1.46c-1.01-.32-1.03-1.01.22-1.5L20.35%204.5c.85-.32%201.6.2%201.32%201.5%22%2F%3E%3C%2Fsvg%3E%0A%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3Ch2%3EJoin%20TeamRohit%2045%3C%2Fh2%3E%0A%20%20%20%20%3Cp%3EGet%20live%20match%20links%2C%20fresh%20stream%20updates%2C%20and%20channel%20alerts%20straight%20to%20your%20Telegram.%3C%2Fp%3E%0A%20%20%20%20%3Ca%20class%3D%22tg-join-btn%22%20id%3D%22tg-join%22%20href%3D%22https%3A%2F%2Ft.me%2F%2BlkbpBqFd0FljNzJl%22%20target%3D%22_blank%22%20rel%3D%22noopener%22%3E%0A%20%20%20%20%20%20%3Csvg%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22currentColor%22%3E%3Cpath%20d%3D%22M21.05%203.16%202.53%2010.33c-1.24.5-1.23%201.19-.23%201.5l4.76%201.48%201.84%205.6c.22.6.36.85.7.85.27%200%20.39-.12.53-.27l1.9-1.85%204.68%203.45c.86.48%201.48.23%201.7-.8l3.06-14.3c.3-1.28-.48-1.85-1.42-1.83zM8.4%2014.02l9.2-8.24c.4-.36-.09-.53-.6-.2l-11.3%207.1-4.66-1.46c-1.01-.32-1.03-1.01.22-1.5L20.35%204.5c.85-.32%201.6.2%201.32%201.5%22%2F%3E%3C%2Fsvg%3E%0A%20%20%20%20%20%20Join%20on%20Telegram%0A%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%3Cbutton%20class%3D%22tg-skip%22%20id%3D%22tg-skip%22%3EMaybe%20later%3C%2Fbutton%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fdiv%3E%0A%0A%3C!--%20PLAYER%20--%3E%0A%3Cdiv%20id%3D%22pc%22%3E%0A%20%20%3Cvideo%20id%3D%22v%22%20playsinline%20webkit-playsinline%0A%20%20%20%20preload%3D%22none%22%0A%20%20%20%20x5-video-player-type%3D%22h5%22%0A%20%20%20%20x5-video-player-fullscreen%3D%22true%22%3E%0A%20%20%3C%2Fvideo%3E%0A%3C%2Fdiv%3E%0A%0A%3Cscript%20src%3D%22https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2Fshaka-player%404.16.2%2Fdist%2Fshaka-player.ui.min.js%22%3E%3C%2Fscript%3E%0A%3Cscript%3E%0A(function()%7B%0A%22use%20strict%22%3B%0A%0Avar%20API%20%3D%20%22https%3A%2F%2Fsonujson-v3.pages.dev%2FData%2Fsports.json%22%3B%0A%0Avar%20%24overlay%20%20%3D%20document.getElementById(%22overlay%22)%3B%0Avar%20%24loadMsg%20%20%3D%20document.getElementById(%22loadMsg%22)%3B%0Avar%20%24status%20%20%20%3D%20document.getElementById(%22status%22)%3B%0Avar%20%24list%20%20%20%20%20%3D%20document.getElementById(%22channel-list%22)%3B%0Avar%20%24grid%20%20%20%20%20%3D%20document.getElementById(%22ch-grid%22)%3B%0Avar%20%24pc%20%20%20%20%20%20%20%3D%20document.getElementById(%22pc%22)%3B%0Avar%20%24vid%20%20%20%20%20%20%3D%20document.getElementById(%22v%22)%3B%0Avar%20%24wm%20%20%20%20%20%20%20%3D%20document.getElementById(%22cc-watermark%22)%3B%0Avar%20%24tgModal%20%20%3D%20document.getElementById(%22tg-modal%22)%3B%0Avar%20_stTmr%20%20%20%20%3D%20null%3B%0A%0Afunction%20getTier()%7B%0A%20%20var%20mem%20%20%20%3D%20navigator.deviceMemory%20%7C%7C%204%3B%0A%20%20var%20cores%20%3D%20navigator.hardwareConcurrency%20%7C%7C%204%3B%0A%20%20var%20mob%20%20%20%3D%20%2FAndroid%7CiPhone%7CiPad%7CiPod%2Fi.test(navigator.userAgent)%3B%0A%20%20var%20conn%20%20%3D%20navigator.connection%20%7C%7C%20navigator.mozConnection%20%7C%7C%20navigator.webkitConnection%3B%0A%20%20var%20net%20%20%20%3D%20conn%20%3F%20(conn.effectiveType%20%7C%7C%20%224g%22)%20%3A%20%224g%22%3B%0A%20%20if(!mob)%20return%20%22high%22%3B%0A%20%20if(mem%20%3C%3D%201.5%20%7C%7C%20cores%20%3C%3D%202%20%7C%7C%20net%20%3D%3D%3D%20%22slow-2g%22%20%7C%7C%20net%20%3D%3D%3D%20%222g%22)%20return%20%22low%22%3B%0A%20%20if(mem%20%3C%3D%203%20%20%20%7C%7C%20cores%20%3C%3D%204)%20return%20%22mid%22%3B%0A%20%20return%20%22high%22%3B%0A%7D%0A%0Avar%20TIER%20%3D%20getTier()%3B%0Avar%20PROF%20%3D%20%7B%0A%20%20low%3A%20%20%7Bbuf%3A4%2C%20%20reBuf%3A1.5%2C%20behind%3A10%2C%20maxH%3A480%2C%20%20maxBw%3A1000000%2C%20bwEst%3A400000%20%7D%2C%0A%20%20mid%3A%20%20%7Bbuf%3A7%2C%20%20reBuf%3A1.5%2C%20behind%3A20%2C%20maxH%3A720%2C%20%20maxBw%3A3000000%2C%20bwEst%3A1000000%7D%2C%0A%20%20high%3A%20%7Bbuf%3A10%2C%20reBuf%3A1.5%2C%20behind%3A25%2C%20maxH%3A1080%2C%20maxBw%3A0%2C%20%20%20%20%20%20%20bwEst%3A2000000%7D%0A%7D%5BTIER%5D%3B%0A%0Avar%20FITS%20%20%20%20%20%20%20%3D%20%5B%22contain%22%2C%22fill%22%2C%22cover%22%5D%3B%0Avar%20FIT_LABELS%20%3D%20%7Bcontain%3A%22Fit%22%2C%20fill%3A%22Fill%22%2C%20cover%3A%22Zoom%22%7D%3B%0A%0Afunction%20toast(msg%2C%20type%2C%20dur)%7B%0A%20%20%24status.innerHTML%20%3D%20\'%3Cspan%20class%3D%22st-dot%22%3E%3C%2Fspan%3E%3Cspan%3E\'%20%2B%20msg%20%2B%20\'%3C%2Fspan%3E\'%3B%0A%20%20%24status.className%20%3D%20%22show%20%22%20%2B%20(type%20%7C%7C%20%22ok%22)%3B%0A%20%20if(_stTmr)%7B%20clearTimeout(_stTmr)%3B%20_stTmr%20%3D%20null%3B%20%7D%0A%20%20if(dur%20!%3D%3D%200)%7B%0A%20%20%20%20_stTmr%20%3D%20setTimeout(function()%7B%0A%20%20%20%20%20%20%24status.className%20%3D%20%24status.className.replace(%22show%22%2C%22%22).trim()%3B%0A%20%20%20%20%20%20_stTmr%20%3D%20null%3B%0A%20%20%20%20%7D%2C%20dur%20%7C%7C%204000)%3B%0A%20%20%7D%0A%7D%0A%0Afunction%20setMsg(m)%20%20%20%20%7B%20if(%24loadMsg)%20%24loadMsg.textContent%20%3D%20m%3B%20%7D%0Afunction%20hideOverlay()%7B%20if(%24overlay)%20%24overlay.style.display%20%3D%20%22none%22%3B%20%7D%0Afunction%20getChId()%20%20%20%20%7B%20return%20new%20URLSearchParams(location.search).get(%22id%22)%20%7C%7C%20%22%22%3B%20%7D%0A%0Afunction%20rawCookie(c)%7B%0A%20%20if(!c)%20return%20%22%22%3B%0A%20%20if(c.startsWith(%22__hdnea__%3D%22))%20return%20c.slice(10)%3B%0A%20%20if(c.startsWith(%22__hdnea%3D%22))%20%20return%20c.slice(9)%3B%0A%20%20return%20c%3B%0A%7D%0Afunction%20withCookie(u%2C%20r)%7B%0A%20%20if(!u%20%7C%7C%20!r)%20return%20u%3B%0A%20%20if(u.indexOf(%22__hdnea__%22)%20!%3D%3D%20-1)%20return%20u%3B%0A%20%20return%20u%20%2B%20(u.indexOf(%22%3F%22)%20!%3D%3D%20-1%20%3F%20%22%26%22%20%3A%20%22%3F%22)%20%2B%20%22__hdnea__%3D%22%20%2B%20r%3B%0A%7D%0A%0Afunction%20showTgModal()%7B%20%24tgModal.classList.add(%22show%22)%3B%20%7D%0Afunction%20hideTgModal()%7B%20%24tgModal.classList.remove(%22show%22)%3B%20%7D%0A%0Adocument.getElementById(%22tg-close%22).addEventListener(%22click%22%2C%20hideTgModal)%3B%0Adocument.getElementById(%22tg-skip%22).addEventListener(%22click%22%2C%20%20hideTgModal)%3B%0Adocument.getElementById(%22tg-join%22).addEventListener(%22click%22%2C%20%20hideTgModal)%3B%0A%24tgModal.addEventListener(%22click%22%2C%20function(e)%7B%20if(e.target%20%3D%3D%3D%20%24tgModal)%20hideTgModal()%3B%20%7D)%3B%0A%0Aasync%20function%20loadData()%7B%0A%20%20var%20r%20%3D%20await%20fetch(API%2C%20%7Bcache%3A%22no-store%22%2C%20headers%3A%7BAccept%3A%22application%2Fjson%22%7D%7D)%3B%0A%20%20if(!r.ok)%20throw%20new%20Error(%22HTTP%20%22%20%2B%20r.status)%3B%0A%20%20var%20d%20%3D%20await%20r.json()%3B%0A%20%20if(!d%20%7C%7C%20!Array.isArray(d.channels)%20%7C%7C%20!d.channels.length)%20throw%20new%20Error(%22empty%22)%3B%0A%20%20return%20d%3B%0A%7D%0A%0Afunction%20renderList(channels)%7B%0A%20%20hideOverlay()%3B%0A%20%20var%20f%20%3D%20document.createDocumentFragment()%3B%0A%20%20channels.forEach(function(ch)%7B%0A%20%20%20%20var%20a%20%3D%20document.createElement(%22a%22)%3B%0A%20%20%20%20a.className%20%3D%20%22ch-card%22%3B%0A%20%20%20%20a.href%20%3D%20%22%3Fid%3D%22%20%2B%20encodeURIComponent(ch.id)%3B%0A%20%20%20%20a.innerHTML%20%3D%0A%20%20%20%20%20%20\'%3Cspan%20class%3D%22ch-name%22%3E\'%20%2B%20ch.name%20%2B%20\'%3C%2Fspan%3E\'%20%2B%0A%20%20%20%20%20%20\'%3Cspan%20class%3D%22ch-play%22%3E%3Csvg%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22currentColor%22%3E%3Cpolygon%20points%3D%225%203%2019%2012%205%2021%205%203%22%2F%3E%3C%2Fsvg%3E%3C%2Fspan%3E\'%3B%0A%20%20%20%20f.appendChild(a)%3B%0A%20%20%7D)%3B%0A%20%20%24grid.appendChild(f)%3B%0A%20%20%24list.style.display%20%3D%20%22flex%22%3B%0A%7D%0A%0Afunction%20errMsg(msg)%7B%0A%20%20setMsg(msg)%3B%0A%20%20%24overlay.style.display%20%3D%20%22flex%22%3B%0A%20%20toast(msg%2C%20%22err%22%2C%200)%3B%0A%7D%0A%0Afunction%20shakaErrStr(e)%7B%0A%20%20if(!e)%20return%20%22Playback%20Error%22%3B%0A%20%20var%20cat%20%3D%20%7B1%3A%22Network%22%2C2%3A%22Text%22%2C3%3A%22Media%22%2C4%3A%22Manifest%22%2C5%3A%22Stream%22%2C6%3A%22DRM%22%2C7%3A%22Player%22%7D%3B%0A%20%20var%20s%20%3D%20(cat%5Be.category%5D%20%7C%7C%20%22Error%22)%20%2B%20%22%20%22%20%2B%20e.category%20%2B%20%22%3A%22%20%2B%20e.code%3B%0A%20%20if(e.data%20%26%26%20e.data%5B0%5D%20%26%26%20typeof%20e.data%5B0%5D%20%3D%3D%3D%20%22string%22)%0A%20%20%20%20s%20%2B%3D%20%22%20%E2%80%94%20%22%20%2B%20e.data%5B0%5D.slice(0%2C%2072)%3B%0A%20%20return%20s%3B%0A%7D%0A%0Afunction%20ratioLabel(w%2C%20h)%7B%0A%20%20if(!w%20%7C%7C%20!h)%20return%20%22%E2%80%94%22%3B%0A%20%20function%20gcd(a%2C%20b)%7B%20return%20b%20%3F%20gcd(b%2C%20a%20%25%20b)%20%3A%20a%3B%20%7D%0A%20%20var%20g%20%3D%20gcd(w%2C%20h)%20%7C%7C%201%2C%20rw%20%3D%20w%2Fg%2C%20rh%20%3D%20h%2Fg%3B%0A%20%20var%20named%20%3D%20%7B%0A%20%20%20%20%2216%3A9%22%3A16%2F9%2C%20%224%3A3%22%3A4%2F3%2C%20%2221%3A9%22%3A21%2F9%2C%20%221%3A1%22%3A1%2C%0A%20%20%20%20%229%3A16%22%3A9%2F16%2C%20%223%3A2%22%3A3%2F2%2C%20%225%3A4%22%3A5%2F4%2C%20%222%3A1%22%3A2%0A%20%20%7D%3B%0A%20%20var%20real%20%3D%20w%2Fh%2C%20best%20%3D%20null%2C%20bestD%20%3D%200.02%3B%0A%20%20Object.keys(named).forEach(function(k)%7B%0A%20%20%20%20var%20d%20%3D%20Math.abs(named%5Bk%5D%20-%20real)%3B%0A%20%20%20%20if(d%20%3C%20bestD)%7B%20bestD%20%3D%20d%3B%20best%20%3D%20k%3B%20%7D%0A%20%20%7D)%3B%0A%20%20if(best)%20return%20best%3B%0A%20%20if(rw%20%3C%3D%2040%20%26%26%20rh%20%3C%3D%2040)%20return%20rw%20%2B%20%22%3A%22%20%2B%20rh%3B%0A%20%20return%20real.toFixed(2)%20%2B%20%22%3A1%22%3B%0A%7D%0A%0Afunction%20injectControls(container%2C%20vid)%7B%0A%20%20var%20panel%20%3D%20container.querySelector(%22.shaka-controls-button-panel%22)%3B%0A%20%20if(!panel)%20return%20false%3B%0A%0A%20%20var%20anchor%20%3D%20panel.querySelector(%22.shaka-fullscreen-button%22)%3B%0A%20%20var%20fitIdx%20%20%3D%200%3B%0A%20%20var%20fitBtn%20%20%3D%20document.createElement(%22button%22)%3B%0A%20%20fitBtn.className%20%3D%20%22sp-btn%20sp-fit-btn%22%3B%0A%20%20fitBtn.title%20%20%20%20%20%3D%20%22Video%20Fit%3A%20%22%20%2B%20FIT_LABELS.contain%3B%0A%20%20fitBtn.setAttribute(%22aria-label%22%2C%20%22Cycle%20Video%20Fit%20Mode%22)%3B%0A%20%20fitBtn.innerHTML%20%3D%20\'%3Cspan%20class%3D%22fit-pill%22%3E%E2%80%94%3C%2Fspan%3E\'%3B%0A%0A%20%20if(anchor)%20panel.insertBefore(fitBtn%2C%20anchor)%3B%0A%20%20else%20%20%20%20%20%20%20panel.appendChild(fitBtn)%3B%0A%0A%20%20var%20currentRatio%20%3D%20%22%E2%80%94%22%3B%0A%20%20function%20applyFit(i)%7B%0A%20%20%20%20fitIdx%20%3D%20i%3B%0A%20%20%20%20var%20m%20%3D%20FITS%5Bi%5D%3B%0A%20%20%20%20vid.classList.remove(%22mode-fill%22%2C%22mode-cover%22)%3B%0A%20%20%20%20if(m%20%3D%3D%3D%20%22fill%22)%20%20vid.classList.add(%22mode-fill%22)%3B%0A%20%20%20%20if(m%20%3D%3D%3D%20%22cover%22)%20vid.classList.add(%22mode-cover%22)%3B%0A%20%20%20%20fitBtn.classList.remove(%22mode-fill%22%2C%22mode-cover%22)%3B%0A%20%20%20%20if(m%20!%3D%3D%20%22contain%22)%20fitBtn.classList.add(%22mode-%22%20%2B%20m)%3B%0A%20%20%20%20fitBtn.title%20%3D%20%22Video%20Fit%3A%20%22%20%2B%20FIT_LABELS%5Bm%5D%3B%0A%20%20%20%20var%20pill%20%3D%20fitBtn.querySelector(%22.fit-pill%22)%3B%0A%20%20%20%20if(pill)%20pill.textContent%20%3D%20(m%20%3D%3D%3D%20%22contain%22)%20%3F%20currentRatio%20%3A%20FIT_LABELS%5Bm%5D%3B%0A%20%20%7D%0A%0A%20%20fitBtn.addEventListener(%22click%22%2C%20function(e)%7B%0A%20%20%20%20e.stopPropagation()%3B%0A%20%20%20%20applyFit((fitIdx%20%2B%201)%20%25%20FITS.length)%3B%0A%20%20%7D)%3B%0A%0A%20%20%5B%22fullscreenchange%22%2C%22webkitfullscreenchange%22%5D.forEach(function(ev)%7B%0A%20%20%20%20document.addEventListener(ev%2C%20function()%7B%0A%20%20%20%20%20%20if(!(document.fullscreenElement%20%7C%7C%20document.webkitFullscreenElement))%20applyFit(0)%3B%0A%20%20%20%20%7D)%3B%0A%20%20%7D)%3B%0A%0A%20%20var%20_ratioTries%20%3D%200%3B%0A%20%20function%20updateRatio()%7B%0A%20%20%20%20var%20pill%20%3D%20fitBtn.querySelector(%22.fit-pill%22)%3B%0A%20%20%20%20if(!pill)%20return%3B%0A%20%20%20%20if(vid.videoWidth%20%3E%200)%7B%0A%20%20%20%20%20%20currentRatio%20%3D%20ratioLabel(vid.videoWidth%2C%20vid.videoHeight)%3B%0A%20%20%20%20%20%20if(FITS%5BfitIdx%5D%20%3D%3D%3D%20%22contain%22)%20pill.textContent%20%3D%20currentRatio%3B%0A%20%20%20%20%20%20_ratioTries%20%3D%200%3B%0A%20%20%20%20%7D%20else%20if(_ratioTries%20%3C%2015)%7B%0A%20%20%20%20%20%20_ratioTries%2B%2B%3B%0A%20%20%20%20%20%20setTimeout(updateRatio%2C%20700)%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%0A%20%20vid.addEventListener(%22loadedmetadata%22%2C%20function()%7B%20_ratioTries%20%3D%200%3B%20updateRatio()%3B%20%7D)%3B%0A%20%20vid.addEventListener(%22resize%22%2C%20updateRatio)%3B%0A%20%20vid.addEventListener(%22timeupdate%22%2C%20function%20onFirstFrame()%7B%0A%20%20%20%20vid.removeEventListener(%22timeupdate%22%2C%20onFirstFrame)%3B%0A%20%20%20%20updateRatio()%3B%0A%20%20%7D)%3B%0A%20%20updateRatio()%3B%0A%20%20return%20true%3B%0A%7D%0A%0Aasync%20function%20startPlayer(ch)%7B%0A%20%20%24pc.style.display%20%3D%20%22flex%22%3B%0A%20%20if(%24wm)%20%24wm.style.display%20%3D%20%22flex%22%3B%0A%0A%20%20showTgModal()%3B%0A%0A%20%20shaka.polyfill.installAll()%3B%0A%20%20if(!shaka.Player.isBrowserSupported())%7B%20errMsg(%22Browser%20Not%20Supported.%22)%3B%20return%3B%20%7D%0A%0A%20%20var%20player%20%3D%20new%20shaka.Player()%3B%0A%20%20await%20player.attach(%24vid)%3B%0A%0A%20%20new%20shaka.ui.Overlay(player%2C%20%24pc%2C%20%24vid).configure(%7B%0A%20%20%20%20controlPanelElements%3A%5B%0A%20%20%20%20%20%20%22play_pause%22%2C%22mute%22%2C%22volume%22%2C%0A%20%20%20%20%20%20%22time_and_duration%22%2C%22spacer%22%2C%0A%20%20%20%20%20%20%22quality%22%2C%22picture_in_picture%22%2C%22fullscreen%22%0A%20%20%20%20%5D%2C%0A%20%20%20%20seekBarColors%3A%7B%0A%20%20%20%20%20%20base%3A%20%20%20%20%22%231e2836%22%2C%0A%20%20%20%20%20%20buffered%3A%22%23c49300%22%2C%0A%20%20%20%20%20%20played%3A%20%20%22%23f5b800%22%0A%20%20%20%20%7D%0A%20%20%7D)%3B%0A%0A%20%20var%20_injectCount%20%3D%200%3B%0A%20%20(function%20tryInject()%7B%0A%20%20%20%20if(injectControls(%24pc%2C%20%24vid))%20return%3B%0A%20%20%20%20if(%2B%2B_injectCount%20%3C%205)%20setTimeout(tryInject%2C%20150)%3B%0A%20%20%7D)()%3B%0A%0A%20%20var%20cookie%20%3D%20ch.cookie%3B%0A%20%20var%20raw%20%20%20%20%3D%20rawCookie(cookie)%3B%0A%20%20var%20keyId%20%20%3D%20ch.key_id%3B%0A%20%20var%20key%20%20%20%20%3D%20ch.key%3B%0A%20%20var%20url%20%20%20%20%3D%20ch.stream_url%3B%0A%20%20var%20restrictionsRelaxed%20%3D%20false%3B%0A%20%20var%20thermalApplied%20%20%20%20%20%20%3D%20false%3B%0A%20%20var%20sessionStart%20%20%20%20%20%20%20%20%3D%20Date.now()%3B%0A%0A%20%20var%20thermalTimer%20%3D%20setInterval(function()%7B%0A%20%20%20%20if(Date.now()%20-%20sessionStart%20%3C%2060*60*1000)%20return%3B%0A%20%20%20%20clearInterval(thermalTimer)%3B%0A%20%20%20%20if(thermalApplied)%20return%3B%0A%20%20%20%20thermalApplied%20%3D%20true%3B%0A%20%20%20%20try%7B%0A%20%20%20%20%20%20player.configure(%22streaming.bufferBehind%22%2C%208)%3B%0A%20%20%20%20%20%20if(%2FAndroid%7CiPhone%7CiPad%7CiPod%2Fi.test(navigator.userAgent))%7B%0A%20%20%20%20%20%20%20%20player.configure(%22abr.restrictions.maxHeight%22%2C%20Math.min(PROF.maxH%2C%20720))%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7Dcatch(_)%7B%7D%0A%20%20%7D%2C%2060000)%3B%0A%0A%20%20function%20buildCfg()%7B%0A%20%20%20%20var%20effMaxH%20%3D%20(thermalApplied%20%26%26%20%2FAndroid%7CiPhone%7CiPad%7CiPod%2Fi.test(navigator.userAgent))%0A%20%20%20%20%20%20%3F%20Math.min(PROF.maxH%2C%20720)%20%3A%20PROF.maxH%3B%0A%20%20%20%20var%20restr%20%3D%20%7B%7D%3B%0A%20%20%20%20if(!restrictionsRelaxed)%7B%0A%20%20%20%20%20%20if(effMaxH%20%3C%201080)%20restr.maxHeight%20%20%20%20%3D%20effMaxH%3B%0A%20%20%20%20%20%20if(PROF.maxBw%20%3E%200)%20restr.maxBandwidth%20%3D%20PROF.maxBw%3B%0A%20%20%20%20%7D%0A%20%20%20%20var%20cfg%20%3D%20%7B%0A%20%20%20%20%20%20manifest%3A%7B%0A%20%20%20%20%20%20%20%20defaultPresentationDelay%3A4%2C%0A%20%20%20%20%20%20%20%20ignoreTextStreamFailures%3Atrue%2C%0A%20%20%20%20%20%20%20%20retryParameters%3A%7BmaxAttempts%3A5%2CbaseDelay%3A500%2CbackoffFactor%3A2%2CfuzzFactor%3A.5%2Ctimeout%3A30000%7D%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20streaming%3A%7B%0A%20%20%20%20%20%20%20%20lowLatencyMode%3Afalse%2C%0A%20%20%20%20%20%20%20%20bufferingGoal%3APROF.buf%2C%0A%20%20%20%20%20%20%20%20rebufferingGoal%3APROF.reBuf%2C%0A%20%20%20%20%20%20%20%20bufferBehind%3APROF.behind%2C%0A%20%20%20%20%20%20%20%20safeSeekOffset%3A4%2C%0A%20%20%20%20%20%20%20%20stallEnabled%3Atrue%2C%0A%20%20%20%20%20%20%20%20stallThreshold%3A1%2C%0A%20%20%20%20%20%20%20%20stallSkip%3A.3%2C%0A%20%20%20%20%20%20%20%20inaccurateManifestTolerance%3A0%2C%0A%20%20%20%20%20%20%20%20retryParameters%3A%7BmaxAttempts%3A5%2CbaseDelay%3A500%2CbackoffFactor%3A2%2CfuzzFactor%3A.5%2Ctimeout%3A30000%7D%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20abr%3A%7B%0A%20%20%20%20%20%20%20%20enabled%3Atrue%2C%0A%20%20%20%20%20%20%20%20defaultBandwidthEstimate%3APROF.bwEst%2C%0A%20%20%20%20%20%20%20%20switchInterval%3A4%2C%0A%20%20%20%20%20%20%20%20restrictions%3Arestr%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%3B%0A%20%20%20%20if(keyId%20%26%26%20key)%7B%0A%20%20%20%20%20%20cfg.drm%20%3D%20%7BclearKeys%3A%7B%7D%7D%3B%0A%20%20%20%20%20%20cfg.drm.clearKeys%5BkeyId%5D%20%3D%20key%3B%0A%20%20%20%20%7D%0A%20%20%20%20return%20cfg%3B%0A%20%20%7D%0A%0A%20%20player.configure(buildCfg())%3B%0A%0A%20%20var%20T%20%3D%20shaka.net.NetworkingEngine.RequestType%3B%0A%20%20player.getNetworkingEngine().registerRequestFilter(function(type%2C%20req)%7B%0A%20%20%20%20req.headers%5B%22Referer%22%5D%20%20%20%20%3D%20%22https%3A%2F%2Fwww.jiotv.com%2F%22%3B%0A%20%20%20%20req.headers%5B%22User-Agent%22%5D%20%3D%20%22Mozilla%2F5.0%20(Linux%3B%20Android%2011%3B%20SM-G991B)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F124.0.0.0%20Mobile%20Safari%2F537.36%22%3B%0A%20%20%20%20if(cookie)%20req.headers%5B%22Cookie%22%5D%20%3D%20cookie%3B%0A%20%20%20%20if(type%20%3D%3D%3D%20T.MANIFEST%20%7C%7C%20type%20%3D%3D%3D%20T.SEGMENT)%0A%20%20%20%20%20%20req.uris%20%3D%20req.uris.map(function(u)%7B%20return%20withCookie(u%2C%20raw)%3B%20%7D)%3B%0A%20%20%7D)%3B%0A%0A%20%20var%20refreshing%20%3D%20false%3B%0A%20%20var%20retries%20%20%20%20%3D%200%3B%0A%20%20var%20edgeTried%20%20%3D%20false%3B%0A%20%20var%20lastTry%20%20%20%20%3D%200%3B%0A%20%20var%20started%20%20%20%20%3D%20false%3B%0A%20%20var%20stallTmr%20%20%20%3D%20null%3B%0A%0A%20%20function%20unmuteOnce()%7B%20%24vid.muted%20%3D%20false%3B%20%7D%0A%20%20%24pc.addEventListener(%22pointerdown%22%2C%20unmuteOnce%2C%20%7Bcapture%3Atrue%2Conce%3Atrue%7D)%3B%0A%20%20%24pc.addEventListener(%22click%22%2C%20%20%20%20%20%20%20unmuteOnce%2C%20%7Bcapture%3Atrue%2Conce%3Atrue%7D)%3B%0A%20%20%24pc.addEventListener(%22keydown%22%2C%20%20%20%20%20unmuteOnce%2C%20%7Bcapture%3Atrue%2Conce%3Atrue%7D)%3B%0A%0A%20%20function%20goLiveEdge()%7B%0A%20%20%20%20if(refreshing)%20return%3B%0A%20%20%20%20try%7B%0A%20%20%20%20%20%20player.goToLive()%3B%0A%20%20%20%20%20%20edgeTried%20%3D%20true%3B%0A%20%20%20%20%20%20toast(%22Syncing%20To%20Live%20Edge%E2%80%A6%22%2C%22warn%22%2C2000)%3B%0A%20%20%20%20%7Dcatch(_)%7B%20reload()%3B%20%7D%0A%20%20%7D%0A%0A%20%20async%20function%20reload()%7B%0A%20%20%20%20var%20now%20%3D%20Date.now()%3B%0A%20%20%20%20if(refreshing%20%7C%7C%20now%20-%20lastTry%20%3C%201500)%20return%3B%0A%20%20%20%20if(retries%20%3E%3D%205)%7B%20toast(%22Stream%20Unavailable.%20Please%20Try%20Again%20Later.%22%2C%22err%22%2C0)%3B%20return%3B%20%7D%0A%20%20%20%20refreshing%20%3D%20true%3B%20lastTry%20%3D%20now%3B%20retries%2B%2B%3B%0A%20%20%20%20toast(%22Reconnecting%E2%80%A6%20(%22%20%2B%20retries%20%2B%20%22%20%2F%205)%22%2C%22warn%22%2C0)%3B%0A%20%20%20%20try%7B%0A%20%20%20%20%20%20var%20d%20%20%20%20%20%3D%20await%20loadData()%3B%0A%20%20%20%20%20%20var%20fresh%20%3D%20d.channels.find(function(c)%7B%20return%20c.id%20%3D%3D%3D%20ch.id%3B%20%7D)%3B%0A%20%20%20%20%20%20if(!fresh)%20throw%20new%20Error(%22missing%22)%3B%0A%20%20%20%20%20%20cookie%20%3D%20fresh.cookie%3B%20raw%20%20%20%3D%20rawCookie(cookie)%3B%0A%20%20%20%20%20%20keyId%20%20%3D%20fresh.key_id%3B%20key%20%20%20%3D%20fresh.key%3B%20url%20%3D%20fresh.stream_url%3B%0A%20%20%20%20%20%20player.configure(buildCfg())%3B%0A%20%20%20%20%20%20await%20player.load(url)%3B%0A%20%20%20%20%20%20%24vid.play().catch(function()%7B%7D)%3B%0A%20%20%20%20%20%20retries%20%3D%200%3B%20edgeTried%20%3D%20false%3B%0A%20%20%20%20%20%20toast(%22Live%22%2C%22live%22%2C4000)%3B%0A%20%20%20%20%7Dcatch(_)%7B%0A%20%20%20%20%20%20setTimeout(reload%2C%20Math.min(1000%20*%20Math.pow(2%2C%20retries%20-%201)%2C%208000))%3B%0A%20%20%20%20%7Dfinally%7B%20refreshing%20%3D%20false%3B%20%7D%0A%20%20%7D%0A%0A%20%20var%20RECOVERABLE%20%3D%20%5B1001%2C1002%2C1003%2C4012%2C6006%2C6007%2C7000%2C7001%2C7002%5D%3B%0A%0A%20%20player.addEventListener(%22error%22%2C%20function(ev)%7B%0A%20%20%20%20var%20err%20%20%3D%20ev.detail%3B%0A%20%20%20%20var%20code%20%3D%20err%20%26%26%20err.code%3B%0A%20%20%20%20if(code%20%3D%3D%3D%204014%20%26%26%20!restrictionsRelaxed)%7B%0A%20%20%20%20%20%20restrictionsRelaxed%20%3D%20true%3B%0A%20%20%20%20%20%20refreshing%20%3D%20true%3B%0A%20%20%20%20%20%20player.configure(buildCfg())%3B%0A%20%20%20%20%20%20toast(%22Adjusting%20Quality%E2%80%A6%22%2C%22warn%22%2C2000)%3B%0A%20%20%20%20%20%20player.load(url)%0A%20%20%20%20%20%20%20%20.then(function()%7B%20%24vid.play().catch(function()%7B%7D)%3B%20toast(%22Live%22%2C%22live%22%2C4000)%3B%20%7D)%0A%20%20%20%20%20%20%20%20.catch(function()%7B%20reload()%3B%20%7D)%0A%20%20%20%20%20%20%20%20.finally(function()%7B%20refreshing%20%3D%20false%3B%20%7D)%3B%0A%20%20%20%20%20%20return%3B%0A%20%20%20%20%7D%0A%20%20%20%20if(RECOVERABLE.indexOf(code)%20!%3D%3D%20-1)%7B%0A%20%20%20%20%20%20toast(%22Buffering%E2%80%A6%22%2C%22warn%22%2C0)%3B%0A%20%20%20%20%20%20setTimeout(function()%7B%20if(!refreshing)%20reload()%3B%20%7D%2C%20700)%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20toast(shakaErrStr(err)%2C%22err%22%2C6000)%3B%0A%20%20%20%20%7D%0A%20%20%7D)%3B%0A%0A%20%20try%7B%0A%20%20%20%20setMsg(%22Loading%20Stream%E2%80%A6%22)%3B%0A%20%20%20%20toast(%22Loading%20Stream%E2%80%A6%22%2C%22warn%22%2C0)%3B%0A%20%20%20%20await%20player.load(url)%3B%0A%20%20%20%20hideOverlay()%3B%0A%20%20%20%20toast(%22Ready%20%E2%80%94%20Tap%20%E2%96%B6%20To%20Play%22%2C%22ok%22%2C5000)%3B%0A%20%20%7Dcatch(_)%7B%0A%20%20%20%20hideOverlay()%3B%0A%20%20%20%20toast(%22Connection%20Error%20%E2%80%94%20Retrying%E2%80%A6%22%2C%22warn%22%2C0)%3B%0A%20%20%20%20setTimeout(reload%2C%201500)%3B%0A%20%20%20%20return%3B%0A%20%20%7D%0A%0A%20%20function%20onStall()%7B%0A%20%20%20%20if(stallTmr)%20return%3B%0A%20%20%20%20toast(%22Buffering%E2%80%A6%22%2C%22warn%22%2C0)%3B%0A%20%20%20%20if(!started%20%7C%7C%20refreshing)%20return%3B%0A%20%20%20%20stallTmr%20%3D%20setTimeout(function()%7B%0A%20%20%20%20%20%20stallTmr%20%3D%20null%3B%0A%20%20%20%20%20%20if(!edgeTried)%20goLiveEdge()%3B%20else%20reload()%3B%0A%20%20%20%20%7D%2C%205000)%3B%0A%20%20%7D%0A%0A%20%20function%20onPlaying()%7B%0A%20%20%20%20started%20%3D%20true%3B%0A%20%20%20%20if(stallTmr)%7B%20clearTimeout(stallTmr)%3B%20stallTmr%20%3D%20null%3B%20%7D%0A%20%20%20%20edgeTried%20%3D%20false%3B%0A%20%20%20%20if(!refreshing)%20toast(%22Live%22%2C%22live%22%2C3000)%3B%0A%20%20%7D%0A%0A%20%20%24vid.addEventListener(%22waiting%22%2C%20onStall)%3B%0A%20%20%24vid.addEventListener(%22stalled%22%2C%20onStall)%3B%0A%20%20%24vid.addEventListener(%22playing%22%2C%20onPlaying)%3B%0A%20%20%24vid.addEventListener(%22error%22%2C%20%20%20function()%7B%0A%20%20%20%20if(!refreshing)%7B%0A%20%20%20%20%20%20toast(%22Buffering%E2%80%A6%22%2C%22warn%22%2C0)%3B%0A%20%20%20%20%20%20setTimeout(function()%7B%20if(!refreshing)%20reload()%3B%20%7D%2C%20700)%3B%0A%20%20%20%20%7D%0A%20%20%7D)%3B%0A%0A%20%20document.addEventListener(%22visibilitychange%22%2C%20function()%7B%0A%20%20%20%20if(!document.hidden)%7B%0A%20%20%20%20%20%20setTimeout(function()%7B%0A%20%20%20%20%20%20%20%20if(started%20%26%26%20%24vid.paused%20%26%26%20!refreshing)%20%24vid.play().catch(function()%7B%7D)%3B%0A%20%20%20%20%20%20%7D%2C%20400)%3B%0A%20%20%20%20%7D%0A%20%20%7D)%3B%0A%0A%20%20var%20netConn%20%3D%20navigator.connection%20%7C%7C%20navigator.mozConnection%20%7C%7C%20navigator.webkitConnection%3B%0A%20%20if(netConn)%7B%0A%20%20%20%20netConn.addEventListener(%22change%22%2C%20function()%7B%0A%20%20%20%20%20%20if(!player%20%7C%7C%20restrictionsRelaxed)%20return%3B%0A%20%20%20%20%20%20var%20t%20%3D%20netConn.effectiveType%20%7C%7C%20%224g%22%3B%0A%20%20%20%20%20%20var%20h%20%3D%20t%20%3D%3D%3D%20%22slow-2g%22%20%7C%7C%20t%20%3D%3D%3D%20%222g%22%20%3F%20240%20%3A%20t%20%3D%3D%3D%20%223g%22%20%3F%20480%20%3A%20PROF.maxH%3B%0A%20%20%20%20%20%20try%7B%20player.configure(%22abr.restrictions.maxHeight%22%2C%20h)%3B%20%7Dcatch(_)%7B%7D%0A%20%20%20%20%20%20if(h%20%3C%20PROF.maxH)%20toast(%22Slow%20Network%20%E2%80%94%20Reducing%20Quality%22%2C%22warn%22%2C3000)%3B%0A%20%20%20%20%7D)%3B%0A%20%20%7D%0A%7D%0A%0Aasync%20function%20main()%7B%0A%20%20var%20id%20%3D%20getChId()%2C%20data%3B%0A%20%20try%7B%0A%20%20%20%20setMsg(%22Fetching%20Channels%E2%80%A6%22)%3B%0A%20%20%20%20data%20%3D%20await%20loadData()%3B%0A%20%20%7Dcatch(_)%7B%0A%20%20%20%20errMsg(%22Connection%20Error.%20Please%20Check%20Your%20Internet.%22)%3B%0A%20%20%20%20return%3B%0A%20%20%7D%0A%20%20if(!id)%7B%20renderList(data.channels)%3B%20return%3B%20%7D%0A%20%20var%20ch%20%3D%20data.channels.find(function(c)%7B%20return%20c.id%20%3D%3D%3D%20id%3B%20%7D)%3B%0A%20%20if(!ch)%7B%20errMsg(%22Channel%20Not%20Found.%22)%3B%20return%3B%20%7D%0A%20%20document.title%20%3D%20%22TeamRohit%2045%20%E2%80%94%20%22%20%2B%20ch.name%3B%0A%20%20await%20startPlayer(ch)%3B%0A%7D%0A%0Adocument.addEventListener(%22DOMContentLoaded%22%2C%20main)%3B%0A%7D)()%3B%0A%3C%2Fscript%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E'));
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="description" content="Team Rohit 45 by CnpTVOfficial — Watch live cricket streams, get live scores, and exclusive match updates. Join our WhatsApp channel for real-time cricket news, T20 updates, and instant streaming alerts.">
+<meta name="keywords" content="cricket news, live cricket stream, live scores, cricket updates, CnpTVOfficial, Team Rohit 45, cricket highlights, live match, IPL live, watch cricket online, T20 streams">
+<meta name="author" content="Sayan">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="googlebot" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Team Rohit 45 — Live Cricket Streams & Scores | CnpTVOfficial">
+<meta property="og:description" content="Watch live cricket streams, get live scores & exclusive sports updates. Join our WhatsApp channel for instant alerts.">
+<meta property="og:url" content="https://teamrohit45.pages.dev/">
+<meta property="og:site_name" content="Team Rohit 45">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Team Rohit 45 — Live Cricket | CnpTVOfficial">
+<meta name="twitter:description" content="Live cricket scores, match streams, highlights & instant updates. Join now!">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Team Rohit 45">
+<meta name="theme-color" content="#000000">
+<meta name="color-scheme" content="dark">
+<meta name="format-detection" content="telephone=no">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+<title>TEAM ROHIT 45 — Live Cricket &amp; Scores | CnpTVOfficial</title>
+<link rel="canonical" href="https://teamrohit45.pages.dev/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://teamrohit45.pages.dev/#website",
+      "name": "Team Rohit 45",
+      "alternateName": "CnpTVOfficial",
+      "url": "https://teamrohit45.pages.dev/",
+      "description": "Live cricket scores, exclusive streams, and instant match updates",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://teamrohit45.pages.dev/#organization" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://teamrohit45.pages.dev/#organization",
+      "name": "CnpTVOfficial",
+      "url": "https://teamrohit45.pages.dev/",
+      "sameAs": [
+        "https://t.me/CnpTVOfficial",
+        "https://whatsapp.com/channel/0029VbDMpWVAe5VldaFI370o"
+      ]
+    }
+  ]
+}
 </script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G5NE717HVD"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-G5NE717HVD',{anonymize_ip:true});</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://sonujson-v4.pages.dev/">
+<link rel="dns-prefetch" href="https://sonujson-v4.pages.dev/">
+<link rel="dns-prefetch" href="https://1dot1dot1dot1.cloudflare-dns.com">
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Amaranth:wght@400;700&display=swap" rel="stylesheet">
+<link rel="ai-catalog" href="/.well-known/ai-catalog.json">
+<link rel="api-catalog" href="/.well-known/api-catalog">
+<link rel="service-doc" href="/.well-known/agent-card.json">
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{height:100%;height:-webkit-fill-available;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{width:100%;height:100%;min-height:100vh;min-height:100dvh;min-height:-webkit-fill-available;background:#000;overflow:hidden;-webkit-tap-highlight-color:transparent}
+#main-iframe{position:fixed;top:0;left:0;width:100vw;height:100vh;height:100dvh;border:none;display:block;visibility:hidden;z-index:1}
+.revenue-btn{position:fixed;top:10px;left:10px;z-index:50;display:flex;align-items:center;gap:7px;padding:5px 12px 5px 7px;background:linear-gradient(135deg,#ff8800 0%,#ffd000 100%);border:none;border-radius:10px;cursor:pointer;outline:none;box-shadow:0 3px 14px rgba(255,160,0,.55);transition:transform .15s,box-shadow .15s;animation:revGlow 2.6s ease-in-out infinite;-webkit-tap-highlight-color:transparent}
+.revenue-btn:active{transform:scale(.93)}
+@keyframes revGlow{0%,100%{box-shadow:0 3px 14px rgba(255,160,0,.55)}50%{box-shadow:0 5px 26px rgba(255,220,0,.9)}}
+.rev-icon{width:28px;height:28px;flex-shrink:0}
+.rev-texts{display:flex;flex-direction:column;align-items:flex-start;line-height:1.15}
+.rev-main{font-family:'Amaranth',sans-serif;font-size:11.5px;font-weight:700;color:#1a0800;letter-spacing:.5px;white-space:nowrap}
+.rev-sub{font-family:Arial,sans-serif;font-size:9px;color:rgba(30,10,0,.6);white-space:nowrap}
+.rev-arrow{width:13px;height:13px;flex-shrink:0;margin-left:2px;stroke:rgba(30,10,0,.6);fill:none;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round}
+#loading-screen{position:fixed;inset:0;z-index:100;background:#0a0a0a;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px}
+.loader{position:relative;width:58px;height:58px}
+.loader-ring{position:absolute;inset:0;border-radius:50%;border:3px solid transparent;border-top-color:#ffcc00;border-right-color:rgba(255,204,0,.18);animation:lSpin 1s cubic-bezier(.55,.1,.45,.9) infinite}
+.loader-ring-inner{position:absolute;inset:11px;border-radius:50%;border:3px solid transparent;border-top-color:#1bcc26;border-right-color:rgba(27,204,38,.16);animation:lSpinRev .8s cubic-bezier(.55,.1,.45,.9) infinite}
+.loader-core{position:absolute;inset:22px;border-radius:50%;background:radial-gradient(circle,rgba(255,204,0,.55) 0%,rgba(255,204,0,0) 72%);animation:lPulse 1.6s ease-in-out infinite}
+@keyframes lSpin{to{transform:rotate(360deg)}}
+@keyframes lSpinRev{to{transform:rotate(-360deg)}}
+@keyframes lPulse{0%,100%{opacity:.35;transform:scale(.82)}50%{opacity:1;transform:scale(1)}}
+.loading-text{display:flex;flex-direction:column;align-items:center;gap:7px}
+.loading-label{font-family:'Amaranth',sans-serif;font-size:15.5px;font-weight:700;letter-spacing:.8px;color:rgba(255,255,255,.88)}
+.loading-sub{display:flex;align-items:center;gap:3px;font-family:Arial,sans-serif;font-size:12px;letter-spacing:.3px;color:rgba(255,255,255,.32)}
+.loading-sub span{opacity:.25;animation:dotFade 1.3s ease-in-out infinite}
+.loading-sub span:nth-child(2){animation-delay:.16s}
+.loading-sub span:nth-child(3){animation-delay:.32s}
+@keyframes dotFade{0%,100%{opacity:.25}50%{opacity:1}}
+.popup-overlay{position:fixed;inset:0;background:rgba(0,0,0,.88);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);display:none;align-items:center;justify-content:center;padding:20px;z-index:2147483647}
+.popup-overlay.visible{display:flex}
+.popup-wrap{position:relative;width:100%;max-width:358px;padding:2px;background:linear-gradient(145deg,rgba(255,204,0,.8) 0%,rgba(255,224,80,.4) 50%,rgba(255,204,0,.8) 100%);border-radius:18px;box-shadow:0 0 50px rgba(255,204,0,.14),0 30px 70px rgba(0,0,0,.72);animation:popIn .42s cubic-bezier(.175,.885,.32,1.275) both}
+@keyframes popIn{from{opacity:0;transform:scale(.87) translateY(24px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.popup-box{background:linear-gradient(168deg,#1e1e26 0%,#0e0e13 100%);border-radius:16px;padding:34px 24px 26px;text-align:center}
+.popup-title{color:#ffcc00;font-family:'Acme',sans-serif;font-size:30px;letter-spacing:.5px;margin-bottom:12px}
+.popup-text{color:#a0a0a8;font-size:14px;line-height:1.65;margin-bottom:24px}
+.popup-text b{color:#fff;font-family:'Amaranth',sans-serif;font-size:17px;display:block;margin-top:7px}
+.btn-popup{width:100%;padding:14px;border:none;border-radius:13px;font-family:'Amaranth',sans-serif;cursor:pointer;transition:transform .18s,box-shadow .18s;-webkit-user-select:none;user-select:none;-webkit-appearance:none;appearance:none;touch-action:manipulation;display:block}
+.btn-popup:active{transform:scale(.95)}
+.btn-join-main{font-size:18px;font-weight:700;letter-spacing:.6px;margin-bottom:9px;line-height:1;padding:14px;text-align:center}
+.btn-joined-main{background:transparent;color:#484850;font-size:12px;font-weight:400;width:auto;margin:0 auto;padding:7px 14px;text-align:center}
+#error-screen{position:fixed;inset:0;z-index:80;background:#0d0d16;display:none;align-items:center;justify-content:center;padding:24px}
+#error-screen.show{display:flex}
+.error-card{background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.1);border-radius:20px;padding:52px 32px 42px;max-width:400px;width:100%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.6);animation:popIn .35s cubic-bezier(.34,1.45,.64,1)}
+.error-icon{width:72px;height:72px;border-radius:50%;border:2px solid rgba(255,255,255,.15);background:rgba(255,255,255,.05);display:flex;align-items:center;justify-content:center;margin:0 auto 22px}
+.error-icon svg{width:36px;height:36px;stroke:rgba(255,255,255,.55);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.error-title{font-family:'Acme',sans-serif;font-size:clamp(22px,6vw,28px);font-weight:800;color:#efefef;margin-bottom:12px}
+.error-badge{display:inline-block;background:rgba(245,165,0,.12);border:1px solid rgba(245,165,0,.28);color:#f5a500;font-size:13.5px;font-weight:700;padding:4px 16px;border-radius:20px;margin-bottom:14px;letter-spacing:.4px}
+.error-body{font-size:14px;color:rgba(255,255,255,.38);line-height:1.8;margin-bottom:14px;font-family:Arial,sans-serif}
+.error-retry-note{display:flex;align-items:center;justify-content:center;gap:7px;font-size:12.5px;color:rgba(255,255,255,.34);font-family:Arial,sans-serif;letter-spacing:.3px;margin-bottom:30px}
+.error-retry-dot{width:6px;height:6px;border-radius:50%;background:#f5a500;animation:ePulse 1.4s ease-in-out infinite}
+@keyframes ePulse{0%,100%{opacity:.35;transform:scale(.8)}50%{opacity:1;transform:scale(1.1)}}
+.error-contact-btn{display:inline-flex;align-items:center;gap:9px;padding:13px 26px;border-radius:50px;background:linear-gradient(135deg,rgba(37,211,102,.18) 0%,rgba(0,180,80,.1) 100%);border:1.5px solid rgba(37,211,102,.4);color:#2aed74;cursor:pointer;font-family:'Amaranth',sans-serif;font-size:15px;font-weight:700;text-decoration:none;letter-spacing:.3px;transition:background .2s,border-color .2s,transform .15s,box-shadow .2s;box-shadow:0 4px 18px rgba(37,211,102,.15)}
+.error-contact-btn:hover{background:linear-gradient(135deg,rgba(37,211,102,.28) 0%,rgba(0,180,80,.2) 100%);border-color:rgba(37,211,102,.6);transform:translateY(-2px);box-shadow:0 8px 28px rgba(37,211,102,.28)}
+.error-contact-btn svg{width:18px;height:18px;fill:#2aed74;flex-shrink:0}
+.error-contact-btn.retry-now-btn{font-family:inherit;margin-bottom:12px}
+.error-contact-btn.retry-now-btn svg{fill:none}
+@media(hover:none){.btn-join-main:hover{box-shadow:none}.revenue-btn:hover{box-shadow:0 3px 14px rgba(255,160,0,.55)}.error-contact-btn:hover{background:linear-gradient(135deg,rgba(37,211,102,.18) 0%,rgba(0,180,80,.1) 100%);transform:none;box-shadow:0 4px 18px rgba(37,211,102,.15)}}
+</style>
+</head>
+<body>
+
+<button class="revenue-btn" id="revenueBtn" type="button" aria-label="Earn reward">
+  <svg class="rev-icon" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs><radialGradient id="rcg" cx="38%" cy="32%" r="62%"><stop offset="0%" stop-color="#ffe566"/><stop offset="55%" stop-color="#ffaa00"/><stop offset="100%" stop-color="#c86c00"/></radialGradient></defs>
+    <ellipse cx="14" cy="21.5" rx="8.5" ry="2.2" fill="rgba(0,0,0,.22)"/>
+    <circle cx="14" cy="13.5" r="10" fill="#c96800"/>
+    <circle cx="14" cy="13.5" r="9.2" fill="url(#rcg)"/>
+    <circle cx="14" cy="13.5" r="6.8" fill="none" stroke="rgba(255,235,120,.42)" stroke-width=".9"/>
+    <text x="14" y="18" text-anchor="middle" font-size="9.5" font-weight="900" fill="#7a3c00" font-family="Arial,sans-serif">$</text>
+    <ellipse cx="11" cy="10.2" rx="3" ry="1.8" fill="rgba(255,255,255,.3)" transform="rotate(-25 11 10.2)"/>
+  </svg>
+  <div class="rev-texts">
+    <span class="rev-main">EARN REWARD</span>
+    <span class="rev-sub">Tap to Claim &#9658;</span>
+  </div>
+  <svg class="rev-arrow" viewBox="0 0 14 14"><path d="M2 7h10M7 2l5 5-5 5"/></svg>
+</button>
+
+<div id="loading-screen">
+  <div class="loader">
+    <div class="loader-ring"></div>
+    <div class="loader-ring-inner"></div>
+    <div class="loader-core"></div>
+  </div>
+  <div class="loading-text">
+    <div class="loading-label">Connecting to Server</div>
+    <div class="loading-sub">Fetching Live Stream<span>.</span><span>.</span><span>.</span></div>
+  </div>
+</div>
+
+<iframe id="main-iframe" allowfullscreen allow="encrypted-media; fullscreen; autoplay; picture-in-picture" referrerpolicy="no-referrer-when-downgrade" scrolling="no"></iframe>
+
+<div class="popup-overlay" id="popup" role="dialog" aria-modal="true">
+  <div class="popup-wrap">
+    <div class="popup-box">
+      <div class="popup-title">Follow Us !!</div>
+      <div class="popup-text">
+        Join our WhatsApp channel<br>
+        <b>TEAM ROHIT 45 &#8482;</b>
+        For Instant Updates &amp; Exclusive Links.
+      </div>
+      <iframe id="joinFrame" title="Join WhatsApp Channel" scrolling="no" style="width:100%;height:46px;border:0;outline:0;display:block;overflow:hidden;background:transparent;margin-bottom:9px;"></iframe>
+      <button class="btn-popup btn-joined-main" id="popupSkipBtn" type="button">No, Thanks</button>
+    </div>
+  </div>
+</div>
+
+<div id="error-screen">
+  <div class="error-card">
+    <div class="error-icon">
+      <svg viewBox="0 0 24 24"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"/><line x1="12" y1="2" x2="12" y2="12"/></svg>
+    </div>
+    <div class="error-title" id="etitle">Stream Not Found</div>
+    <div class="error-badge" id="error-badge">"Unknown"</div>
+    <div class="error-body" id="ebody">The Requested Stream Is Not Available Right Now.<br>Please Check The Link Or Try Again Later.</div>
+    <div class="error-retry-note" id="eretry-note"><span class="error-retry-dot"></span><span>Retrying Automatically</span></div>
+    <button type="button" id="error-retry-btn" class="error-contact-btn retry-now-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#2aed74" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 4v6h-6"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+      Retry Now
+    </button>
+    <a href="https://t.me/CnpTVOfficial" target="_blank" rel="noopener noreferrer" class="error-contact-btn" id="error-contact-btn">
+      <svg viewBox="0 0 24 24"><path d="M9.993 15.674l-.398 5.604c.57 0 .817-.245 1.113-.54l2.67-2.557 5.53 4.047c1.014.558 1.734.264 1.987-.939l3.6-16.86c.3-1.4-.506-1.95-1.496-1.58L1.27 9.64c-1.37.53-1.35 1.29-.233 1.64l5.68 1.77 13.337-8.418c.59-.39 1.13-.175.69.215"/></svg>
+      Contact Support
+    </a>
+  </div>
+</div>
+
+<script>
+(function(){
+'use strict';
+
+var PRIMARY_JSON  = 'https://sonujson-v4.pages.dev/loura.json';
+var FALLBACK_JSON = 'https://allrounder3-0.pages.dev/id.json';
+var CONTACT_LINK  = 'https://t.me/CnpTVOfficial';
+var WA_CHANNEL    = 'https://t.me/+lkbpBqFd0FljNzJl';
+var AD3           = 'https://www.profitableratecpmnetwork.com/rcmcwiap?key=ece4808c567a0636c1e3c34d0422b25d';
+
+var FETCH_TIMEOUT = 8000;
+var RETRY_DELAY   = 8000;
+var SAFETY_MS     = 15000;
+
+var JOIN_SCHEMES = [
+  {bg:'linear-gradient(90deg,#1bcc26,#17b823)',shadow:'rgba(27,204,38,0.38)',color:'#fff'},
+  {bg:'linear-gradient(90deg,#11f7e0,#0dcaba)',shadow:'rgba(17,247,224,0.38)',color:'#003d36'},
+  {bg:'linear-gradient(90deg,#ffff00,#e6e600)',shadow:'rgba(230,230,0,0.42)',color:'#333300'}
+];
+
+var iframe     = document.getElementById('main-iframe');
+var loadScreen = document.getElementById('loading-screen');
+var errScreen  = document.getElementById('error-screen');
+var errTitle   = document.getElementById('etitle');
+var errBody    = document.getElementById('ebody');
+var errBadge   = document.getElementById('error-badge');
+var contactBtn = document.getElementById('error-contact-btn');
+var popup      = document.getElementById('popup');
+var joinFrame  = document.getElementById('joinFrame');
+var skipBtn    = document.getElementById('popupSkipBtn');
+var revenueBtn = document.getElementById('revenueBtn');
+
+contactBtn.href = CONTACT_LINK;
+
+var sc = JOIN_SCHEMES[Math.floor(Math.random() * JOIN_SCHEMES.length)];
+
+function openTab(url) {
+  if (!url) return;
+  var a = document.createElement('a');
+  a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(function(){ if (a.parentNode) a.parentNode.removeChild(a); }, 150);
+}
+
+(function buildJoinFrame(){
+  var html =
+    '<!DOCTYPE html><html><head><meta charset="UTF-8">' +
+    '<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">' +
+    '<link rel="preconnect" href="https://fonts.googleapis.com">' +
+    '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' +
+    '<link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@700&display=swap" rel="stylesheet">' +
+    '<style>' +
+    '*{margin:0;padding:0;box-sizing:border-box}' +
+    'html,body{width:100%;background:transparent;overflow:hidden;-webkit-tap-highlight-color:transparent}' +
+    'button{width:100%;padding:14px;border:none;border-radius:13px;font-family:"Amaranth",sans-serif;' +
+    'font-size:18px;font-weight:700;letter-spacing:.6px;line-height:1;text-align:center;cursor:pointer;' +
+    '-webkit-user-select:none;user-select:none;-webkit-appearance:none;appearance:none;touch-action:manipulation;' +
+    'display:block;transition:transform .18s;background:' + sc.bg + ';box-shadow:0 5px 20px ' + sc.shadow + ';color:' + sc.color + '}' +
+    'button:active{transform:scale(.95)}' +
+    '</style></head><body>' +
+    '<button type="button" id="jb">JOIN NOW</button>' +
+    '<script>(function(){' +
+    'document.getElementById("jb").addEventListener("click",function(e){' +
+      'e.preventDefault();' +
+      'try{parent.postMessage({type:"joinNowClicked"},"*");}catch(e){}' +
+    '},false);' +
+    'function reportHeight(){try{parent.postMessage({type:"joinFrameHeight",height:document.body.scrollHeight},"*");}catch(e){}}' +
+    'window.addEventListener("load",function(){' +
+      'reportHeight();' +
+      'if(document.fonts&&document.fonts.ready){document.fonts.ready.then(reportHeight);}else{setTimeout(reportHeight,300);}' +
+    '});' +
+    'window.addEventListener("message",function(e){' +
+      'if(e&&e.data&&e.data.type==="measureNow")reportHeight();' +
+    '},false);' +
+    '})();<\/script>' +
+    '</body></html>';
+  joinFrame.setAttribute('srcdoc', html);
+})();
+
+function isMobileDevice(){
+  var ua = navigator.userAgent || navigator.vendor || '';
+  if (/android|iphone|ipad|ipod|iemobile|blackberry|opera mini|mobile/i.test(ua)) return true;
+  if (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) return true;
+  return false;
+}
+window.addEventListener('message', function(ev){
+  if (ev.source !== joinFrame.contentWindow) return;
+  var d = ev.data;
+  if (!d || typeof d !== 'object') return;
+  if (d.type === 'joinNowClicked') {
+    if (isMobileDevice()) {
+      window.location.href = WA_CHANNEL;
+    } else {
+      openTab(WA_CHANNEL);
+    }
+    closePopup();
+  } else if (d.type === 'joinFrameHeight' && typeof d.height === 'number' && d.height > 0) {
+    joinFrame.style.height = Math.max(40, d.height) + 'px';
+  }
+}, false);
+
+setTimeout(function(){
+  popup.classList.add('visible');
+  setTimeout(function(){
+    try { joinFrame.contentWindow.postMessage({type:'measureNow'}, '*'); } catch(e){}
+  }, 60);
+}, 4000);
+
+function closePopup() {
+  popup.style.opacity    = '0';
+  popup.style.transition = 'opacity .2s';
+  setTimeout(function(){
+    popup.classList.remove('visible');
+    popup.style.opacity    = '';
+    popup.style.transition = '';
+  }, 220);
+}
+
+skipBtn.addEventListener('click', function(){
+  closePopup();
+});
+
+revenueBtn.addEventListener('click', function(e){
+  e.stopPropagation();
+  openTab(AD3);
+});
+
+var loaderHidden = false;
+var safetyTimer  = null;
+
+function hideLoader() {
+  if (loaderHidden) return;
+  loaderHidden = true;
+  clearTimeout(safetyTimer);
+  loadScreen.style.transition = 'opacity .35s';
+  loadScreen.style.opacity    = '0';
+  iframe.style.visibility     = 'visible';
+  setTimeout(function(){ loadScreen.style.display = 'none'; }, 370);
+}
+iframe.addEventListener('load', hideLoader);
+
+var retryTimer = null;
+
+function showError(id, reason) {
+  loadScreen.style.display = 'none';
+  iframe.style.visibility  = 'hidden';
+  clearTimeout(retryTimer);
+  if (reason === 'missing') {
+    errTitle.textContent = 'No Channel Selected';
+    errBody.textContent  = 'No Channel ID Was Given In The Link. Please Use A Valid Channel Link.';
+    errBadge.style.display = 'none';
+    document.getElementById('eretry-note').style.display = 'none';
+  } else if (reason === 'network') {
+    errTitle.textContent = 'Connection Problem';
+    errBody.textContent  = "Couldn't Reach The Server Right Now. Please Check Your Internet Connection.";
+    errBadge.style.display = 'none';
+    document.getElementById('eretry-note').style.display = 'flex';
+    retryTimer = setTimeout(function(){ fetchAndLoad(id); }, RETRY_DELAY);
+  } else {
+    errTitle.textContent = 'Stream Not Found';
+    errBody.textContent  = 'The Requested Stream Is Not Available Right Now. Please Check The Link Or Try Again Later.';
+    errBadge.style.display = '';
+    errBadge.textContent = id ? '"' + id + '"' : '"Unknown"';
+    document.getElementById('eretry-note').style.display = 'flex';
+    retryTimer = setTimeout(function(){ fetchAndLoad(id); }, RETRY_DELAY);
+  }
+  errScreen.classList.add('show');
+}
+document.getElementById('error-retry-btn').addEventListener('click', function(){
+  var id = getStreamId();
+  if (id) fetchAndLoad(id);
+});
+function hideError() {
+  errScreen.classList.remove('show');
+  clearTimeout(retryTimer);
+}
+
+function onFSChange() {
+  var el = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement;
+  if (el) {
+    if (screen.orientation && screen.orientation.lock) screen.orientation.lock('landscape').catch(function(){});
+  } else {
+    if (screen.orientation && screen.orientation.unlock) try { screen.orientation.unlock(); } catch(e){}
+  }
+}
+document.addEventListener('fullscreenchange', onFSChange);
+document.addEventListener('webkitfullscreenchange', onFSChange);
+document.addEventListener('mozfullscreenchange', onFSChange);
+
+function freshUrl(url){ return url + (url.indexOf('?') === -1 ? '?' : '&') + 'nc=' + Date.now(); }
+
+function fetchJSON(url) {
+  var ctrl  = new AbortController();
+  var timer = setTimeout(function(){ ctrl.abort(); }, FETCH_TIMEOUT);
+  return fetch(freshUrl(url), {cache:'no-store', signal:ctrl.signal})
+    .then(function(r){ clearTimeout(timer); if (!r.ok) throw 0; return r.json(); })
+    .catch(function(e){ clearTimeout(timer); throw e; });
+}
+
+function getStreamId() {
+  var s = window.location.search, raw = null;
+  if (s.length > 1) {
+    raw = s.slice(1);
+    var eq = raw.indexOf('=');
+    if (eq !== -1) raw = raw.slice(eq + 1);
+    raw = raw.split('&')[0];
+    try { raw = decodeURIComponent(raw); } catch(e){}
+  } else {
+    var p = window.location.pathname.replace(/\/+$/,'').split('/');
+    raw = p[p.length - 1];
+  }
+  return (raw && raw.trim()) ? raw.trim() : null;
+}
+
+var metaDescEl  = document.querySelector('meta[name="description"]');
+var ogTitleEl   = document.querySelector('meta[property="og:title"]');
+var ogDescEl    = document.querySelector('meta[property="og:description"]');
+var twTitleEl   = document.querySelector('meta[name="twitter:title"]');
+var twDescEl    = document.querySelector('meta[name="twitter:description"]');
+var canonicalEl = document.querySelector('link[rel="canonical"]');
+
+function updatePageMeta(channelName){
+  channelName = (channelName || '').trim();
+  if (!channelName) return;
+  var title = channelName + ' -  Streaming By CnpTV | TEAM ROHIT 45';
+  var desc  = 'Watch ' + channelName + ' Live Streaming Free On Team Rohit 45. Live Cricket Scores, Match Updates & Instant Alerts - Join Our WhatsApp Channel Now.';
+  document.title = title;
+  if (metaDescEl)  metaDescEl.setAttribute('content', desc);
+  if (ogTitleEl)   ogTitleEl.setAttribute('content', title);
+  if (ogDescEl)    ogDescEl.setAttribute('content', desc);
+  if (twTitleEl)   twTitleEl.setAttribute('content', title);
+  if (twDescEl)    twDescEl.setAttribute('content', desc);
+  if (canonicalEl) canonicalEl.setAttribute('href', window.location.href.split('#')[0]);
+}
+
+function applyStream(item) {
+  clearTimeout(safetyTimer);
+  iframe.src  = item.iframeSrc;
+  safetyTimer = setTimeout(hideLoader, SAFETY_MS);
+  hideError();
+  updatePageMeta(item.name);
+  if (item.hit) fetch(item.hit, {cache:'no-store'}).catch(function(){});
+}
+
+function fetchAndLoad(id) {
+  Promise.allSettled([
+    fetchJSON(PRIMARY_JSON),
+    FALLBACK_JSON ? fetchJSON(FALLBACK_JSON) : Promise.resolve(null)
+  ])
+    .then(function(res){
+      var pd   = res[0].status === 'fulfilled' ? res[0].value : null;
+      var fd   = res[1].status === 'fulfilled' ? res[1].value : null;
+      var list = ((pd && pd.iframes) || []).concat((fd && fd.iframes) || []);
+      var item = null;
+      for (var i = 0; i < list.length; i++) {
+        if (String(list[i].id) === String(id) && list[i].iframeSrc) { item = list[i]; break; }
+      }
+      if (item) {
+        applyStream(item);
+      } else {
+        var reachedServer = !!(pd || fd);
+        showError(id, reachedServer ? null : 'network');
+      }
+    });
+}
+
+var sid = getStreamId();
+if (sid) { fetchAndLoad(sid); } else { showError(null, 'missing'); }
+
+if (navigator.modelContext && typeof navigator.modelContext.registerTool === 'function') {
+  var openTelegramAbort = new AbortController();
+  navigator.modelContext.registerTool({
+    name: 'open_telegram_channel',
+    description: 'Open the official CnpTVOfficial Telegram channel in a new tab',
+    inputSchema: { type: 'object', properties: {} },
+    execute: function(){
+      openTab(CONTACT_LINK);
+      return { status: 'opened', url: CONTACT_LINK };
+    }
+  }, { signal: openTelegramAbort.signal });
+}
+
+})();
+</script>
+</body>
+</html>
